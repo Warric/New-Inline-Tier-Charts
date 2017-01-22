@@ -1,11 +1,25 @@
 // ==UserScript==
-// @name        New Inline Tier Charts
+// @name        New Inline Tier Charts(unofficial)
 // @namespace   DusanAndWarric
 // @description   This will provide an inline tier chart for DotD on Armor games.Maps created by Brayden.Tiers collected by Warric
-// @include     http://armorgames.com/dawn-of-the-dragons-game/*
 // @include     http://www.27thdimension.com/dotd/tierChartsStandalone.html
+// @include        http://www.kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
+// @include        https://www.kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
+// @include        http://www.kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
+// @include        https://www.kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
+// @include        http://kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
+// @include        https://kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
+// @include        http://kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
+// @include        https://kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
+// @include        http://www.dawnofthedragons.com/game*
+// @include        http://www.dawnofthedragons.com/
+// @include        http://www.dawnofthedragons.com
+// @include        http://dawnofthedragons.com/game*
 // @include        http://www.newgrounds.com/portal/view/609826*
 // @include        http://newgrounds.com/portal/view/609826*
+// @include        http://dawnofthedragons.com/
+// @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
+// @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @version     2.33
 // @grant       none
 // ==/UserScript==
