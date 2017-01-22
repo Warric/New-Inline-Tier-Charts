@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        New Inline Tier Charts(unofficial)
-// @namespace   DusanAndWarric
+// @namespace   DusanAndWarric@IDotD
 // @description   This will provide an inline tier chart for DotD on Armor games.Maps created by Brayden.Tiers collected by Warric
 // @include     http://www.27thdimension.com/dotd/tierChartsStandalone.html
 // @include        http://www.kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
