@@ -20,7 +20,7 @@
 // @include        http://dawnofthedragons.com/
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
-// @version     2.33
+// @version     3.0
 // @grant       none
 // ==/UserScript==
 (function(data){
@@ -33,7 +33,7 @@
     wrapper.firstChild.setAttribute('alt',label);
     wrapper.firstChild.setAttribute('onclick','this.parentNode.setAttribute(\'class\',\'\')');
     //adding button
-    addButton(label,'this.parentNode.setAttribute(\'class\',\'active\')',wrapper);
+    addButton(label,'this.parentNode.setAttribute(\'class\',this.parentNode.parentNode.getAttribute(\'class\')===\'active\'?\'\':\'active\');',wrapper);
     //returning result
     return wrapper;
   };
