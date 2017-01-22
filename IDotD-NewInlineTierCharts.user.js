@@ -33,7 +33,7 @@
     wrapper.firstChild.setAttribute('alt',label);
     wrapper.firstChild.setAttribute('onclick','this.parentNode.setAttribute(\'class\',\'\')');
     //adding button
-    addButton(label,'this.parentNode.setAttribute(\'class\',this.parentNode.parentNode.getAttribute(\'class\')===\'active\'?\'\':\'active\');',wrapper);
+    addButton(label,'this.parentNode.setAttribute(\'class\',this.parentNode.getAttribute(\'class\')===\'active\'?\'\':\'active\');',wrapper);
     //returning result
     return wrapper;
   };
