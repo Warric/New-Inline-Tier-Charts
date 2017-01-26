@@ -30,7 +30,7 @@
      * creates a new element for the list
      * @param {string} label
      * @param {string} src
-     * @param {Function} func the function to be called when clicked
+     * @param {Function} func
      * @returns {unresolved}
      */
     var create = function ( label, src, func ) {
@@ -41,25 +41,27 @@
             wrapper.firstChild.setAttribute ( "src", "http://image.prntscr.com/image/" + src + ".png" );
             wrapper.firstChild.setAttribute ( "alt", label );
         }
-        wrapper.appendChild ( document.createElement ( "button" ) );
-        wrapper.lastChild.appendChild ( document.createTextNode ( label ) );
+        if(label) {
+          wrapper.appendChild ( document.createElement ( "button" ) );
+          wrapper.lastChild.appendChild ( document.createTextNode ( label ) );
+        }
         return wrapper;
     };
     var list = document.createElement ( "ul" );
     list.setAttribute ( "id", "NewInlineTierCharts" );
     list.appendChild ( create ( "Switch Side", "", function () {
-        this.parentNode.setAttribute ( "class", this.parentNode.getAttribute ( "class" ) === "right" ? "" : "right" );
+        this.parentNode.setAttribute ( 'class', this.parentNode.getAttribute ( 'class' ) === 'right' ? '' : 'right' );
     } ) );
     /**
      * switches between active and inactive
      * @returns {undefined}
      */
     var showHide = function () {
-        var status = this.getAttribute ( "class" ) === "active" ? "" : "active";
+        var status = this.getAttribute ( 'class' ) === 'active' ? '' : 'active';
         for (var counter = 0; counter < this.parentNode.childNodes.length; counter++) {
-            this.parentNode.childNodes[counter].setAttribute ( "class", "" );
+            this.parentNode.childNodes[counter].setAttribute ( 'class', '' );
         }
-        this.setAttribute ( "class", status );
+        this.setAttribute ( 'class', status );
     };
     for (var counter = 0; counter < data.length; counter++) {
         list.appendChild ( create ( data[counter][0], data[counter][1], showHide ) );
@@ -70,16 +72,18 @@
             "#NewInlineTierCharts{position:fixed;top:0;left:0;z-index:100000;}" +
             "#NewInlineTierCharts.right{left:auto;right:0;}" +
             "#NewInlineTierCharts,#NewInlineTierCharts li{margin:0;padding:0;list-style: none;display:block;}" +
+            "#NewInlineTierCharts li{min-height:0.25em;}" +
             "#NewInlineTierCharts img{width:auto;display:none;background-color:#fff;}" +
-            "#NewInlineTierCharts button{color:#000;border: 1px solid #000;width:60px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
-            "#NewInlineTierCharts .active img{display:block;position:fixed;top:0;left:62px;z-index:100000;}" +
-            "#NewInlineTierCharts.right .active img{left:auto;right:62px;}" +
+            "#NewInlineTierCharts button{border-radius:2px;background:#fff;height:auto;font-size: 12px;font-family: monospace;padding:1px;text-align: center;box-sizing: border-box;text-align:center;color:#000;border: 1px solid #000;width:75px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
+            "#NewInlineTierCharts .active img{display:block;position:fixed;top:0;left:75px;z-index:100000;max-height:100%;}" +
+            "#NewInlineTierCharts.right .active img{left:auto;right:75px;}" +
             "#NewInlineTierCharts .active button{background:#222;color:#fff;}"
             ) );
     document.getElementsByTagName ( "head" )[0].appendChild ( styles );
     document.getElementsByTagName ( "body" )[0].appendChild ( list );
 } ) (
         [
+            [ "", "" ],
             [ "Z1-9", "4f72335bf6a44a699472fb174e487a28" ],
             [ "Small", "ebe0a58b24d9468ab735f7b588129daa" ],
             [ "Med", "663ac3e4731e4aa7b7ade1f8e1b95251" ],
@@ -88,9 +92,11 @@
             [ "Colo", "32ca6648468648dc83269be64f5f9c78" ],
             [ "Giga", "aec4152d67c943ada2f1a9658d6fa750" ],
             [ "Elite", "4dd259053e5a42f590523448797b52d4" ],
+            [ "", "" ],
             [ "Old Guild", "6afdca29e2f14617ad6ee220615ebc54" ],
             [ "Guild 1/2", "ecb8c73134954e61ad5990a476cd78d4" ],
             [ "Guild 2/2", "7df09c5b6cd8466dadb589a1ec0f91e8" ],
+            [ "", "" ],
             [ "BoB Map", "cd6af9b64c8f469cae2140e8ac7fabfa" ],
             [ "MaM Map", "dd378a271f5e40979f2638f444ee0e7d" ],
             [ "GD Map", "61350f40209243ffa416a3cd7fbe4931" ],
