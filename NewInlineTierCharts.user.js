@@ -30,7 +30,7 @@
      * creates a new element for the list
      * @param {string} label
      * @param {string} src
-     * @param {Function} func
+     * @param {Function} func the function to be called when clicked
      * @returns {unresolved}
      */
     var create = function ( label, src, func ) {
