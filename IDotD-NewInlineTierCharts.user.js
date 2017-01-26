@@ -48,18 +48,18 @@
     var list = document.createElement ( "ul" );
     list.setAttribute ( "id", "NewInlineTierCharts" );
     list.appendChild ( create ( "Switch Side", "", function () {
-        this.parentNode.setAttribute ( 'class', this.parentNode.getAttribute ( 'class' ) === 'right' ? '' : 'right' );
+        this.parentNode.setAttribute ( "class", this.parentNode.getAttribute ( "class" ) === "right" ? "" : "right" );
     } ) );
     /**
      * switches between active and inactive
      * @returns {undefined}
      */
     var showHide = function () {
-        var status = this.getAttribute ( 'class' ) === 'active' ? '' : 'active';
+        var status = this.getAttribute ( "class" ) === "active" ? "" : "active";
         for (var counter = 0; counter < this.parentNode.childNodes.length; counter++) {
-            this.parentNode.childNodes[counter].setAttribute ( 'class', '' );
+            this.parentNode.childNodes[counter].setAttribute ( "class", "" );
         }
-        this.setAttribute ( 'class', status );
+        this.setAttribute ( "class", status );
     };
     for (var counter = 0; counter < data.length; counter++) {
         list.appendChild ( create ( data[counter][0], data[counter][1], showHide ) );
