@@ -28,9 +28,9 @@
     "use strict";
     /**
      * creates a new element for the list
-     * @param {string} label
-     * @param {string} src
-     * @param {Function} func
+     * @param {string} label the name of the dataset
+     * @param {string} src the image id
+     * @param {Function} func the function to be called when clicked
      * @returns {unresolved}
      */
     var create = function ( label, src, func ) {
