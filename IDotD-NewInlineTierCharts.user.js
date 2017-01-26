@@ -55,7 +55,7 @@
      * @returns {undefined}
      */
     var showHide = function () {
-        var status = this.parentNode.getAttribute ( 'class' ) === 'active' ? '' : 'active';
+        var status = this.getAttribute ( 'class' ) === 'active' ? '' : 'active';
         for (var counter = 0; counter < this.parentNode.childNodes.length; counter++) {
             this.parentNode.childNodes[counter].setAttribute ( 'class', '' );
         }
