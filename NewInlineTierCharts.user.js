@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.4.2
+// @version        3.4.3
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -99,7 +99,7 @@
             [ "Guild 1/2", "ecb8c73134954e61ad5990a476cd78d4" ],
             [ "Guild 2/2", "7df09c5b6cd8466dadb589a1ec0f91e8" ],
             [ "", "" ],
-            [ "BoB Map", "cd6af9b64c8f469cae2140e8ac7fabfa" ],
+            [ "BoB Map", "f1b3999996334f42b293630ecf283bc9" ],
             [ "MaM Map", "dd378a271f5e40979f2638f444ee0e7d" ],
             [ "GD Map", "61350f40209243ffa416a3cd7fbe4931" ],
             [ "GoC Map", "333019c25a0e435593a15ef78986539b" ],
