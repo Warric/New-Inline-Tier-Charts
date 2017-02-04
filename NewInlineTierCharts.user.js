@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.5.1
+// @version        3.5.2
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -74,7 +74,7 @@
     styles.setAttribute ( "type", "text/css" );
     styles.setAttribute ( "id", "NewInlineTierChartsStyles" );
     styles.appendChild ( document.createTextNode (
-            "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;max-height:100%;overflow-y:auto;}" +
+            "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;max-height:100%;}" +
             "#NewInlineTierCharts:hover,#NewInlineTierCharts[active=\"active\"]{left:0;}" +
             "#NewInlineTierCharts.right{left:auto;right:-65px;}" +
             "#NewInlineTierCharts.right:hover,#NewInlineTierCharts.right[active=\"active\"]{right:0;}" +
