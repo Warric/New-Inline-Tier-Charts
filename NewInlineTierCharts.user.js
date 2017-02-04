@@ -39,9 +39,10 @@
         var wrapper = document.createElement ( "li" );
         wrapper.onclick = func;
         if ( src ) {
-            wrapper.appendChild ( document.createElement ( "img" ) );
-            wrapper.firstChild.setAttribute ( "src", "http://image.prntscr.com/image/" + src + ".png" );
-            wrapper.firstChild.setAttribute ( "alt", label );
+            wrapper.appendChild ( document.createElement('div') );
+            wrapper.firstChild.appendChild ( document.createElement ( "img" ) );
+            wrapper.firstChild.firstChild.setAttribute ( "src", "http://image.prntscr.com/image/" + src + ".png" );
+            wrapper.firstChild.firstChild.setAttribute ( "alt", label );
         }
         if(label) {
           wrapper.appendChild ( document.createElement ( "button" ) );
@@ -71,19 +72,24 @@
     }
     var styles = document.createElement ( "style" );
     styles.setAttribute ( "type", "text/css" );
+    styles.setAttribute ( "id", "NewInlineTierChartsStyles" );
     styles.appendChild ( document.createTextNode (
-            "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;}" +
+            "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;max-height:100%;overflow-y:auto;}" +
             "#NewInlineTierCharts:hover,#NewInlineTierCharts[active=\"active\"]{left:0;}" +
             "#NewInlineTierCharts.right{left:auto;right:-65px;}" +
             "#NewInlineTierCharts.right:hover,#NewInlineTierCharts.right[active=\"active\"]{right:0;}" +
             "#NewInlineTierCharts,#NewInlineTierCharts li{margin:0;padding:0;list-style: none;display:block;}" +
             "#NewInlineTierCharts li{min-height:0.25em;}" +
-            "#NewInlineTierCharts img{width:auto;display:none;background-color:#fff;}" +
+            "#NewInlineTierCharts img{width:auto;height:auto;display:block;background-color:#fff;}" +
+            "#NewInlineTierCharts div{width:auto;max-height:100%;display:none;overflow:auto;}" +
             "#NewInlineTierCharts button{border-radius:2px;background:#fff;height:auto;font-size: 12px;font-family: monospace;padding:1px;text-align: center;box-sizing: border-box;text-align:center;color:#000;border: 1px solid #000;width:75px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
-            "#NewInlineTierCharts .active img{display:block;position:fixed;top:0;left:75px;z-index:100000;max-height:100%;}" +
-            "#NewInlineTierCharts.right .active img{left:auto;right:75px;}" +
+            "#NewInlineTierCharts .active div{display:block;position:fixed;top:0;left:75px;z-index:100000;max-height:100%;max-width:"+(window.innerWidth-150)+"px;}" +
+            "#NewInlineTierCharts.right .active div{left:auto;right:75px;}" +
             "#NewInlineTierCharts .active button{background:#222;color:#fff;}"
             ) );
+    window.addEventListener('resize',function() {
+        document.getElementById("NewInlineTierChartsStyles").innerHTML = document.getElementById("NewInlineTierChartsStyles").innerHTML.replace(/(#NewInlineTierCharts .active div\{.*?max-width:)[0-9]+(px;.*?\})/,'$1'+(window.innerWidth-150)+'$2');
+    });
     document.getElementsByTagName ( "head" )[0].appendChild ( styles );
     document.getElementsByTagName ( "body" )[0].appendChild ( list );
 } ) (
