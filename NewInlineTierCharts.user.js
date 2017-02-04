@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.4.4
+// @version        3.5.0
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -52,7 +52,7 @@
     var list = document.createElement ( "ul" );
     list.setAttribute ( "id", "NewInlineTierCharts" );
     list.appendChild ( create ( "Switch Side", "", function () {
-        this.parentNode.setAttribute ( "class", this.parentNode.getAttribute ( "class" ) === "right" ? "" : "right" );
+        this.parentNode.setAttribute("class",( this.parentNode.getAttribute ( "class" ) === "right" ? "" : "right" ));
     } ) );
     /**
      * switches between active and inactive
@@ -64,6 +64,7 @@
             this.parentNode.childNodes[counter].setAttribute ( "class", "" );
         }
         this.setAttribute ( "class", status );
+        this.parentNode.setAttribute("active",status);
     };
     for (var counter = 0; counter < data.length; counter++) {
         list.appendChild ( create ( data[counter][0], data[counter][1], showHide ) );
@@ -71,8 +72,10 @@
     var styles = document.createElement ( "style" );
     styles.setAttribute ( "type", "text/css" );
     styles.appendChild ( document.createTextNode (
-            "#NewInlineTierCharts{position:fixed;top:0;left:0;z-index:100000;}" +
-            "#NewInlineTierCharts.right{left:auto;right:0;}" +
+            "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;}" +
+            "#NewInlineTierCharts:hover,#NewInlineTierCharts[active=\"active\"]{left:0;}" +
+            "#NewInlineTierCharts.right{left:auto;right:-65px;}" +
+            "#NewInlineTierCharts.right:hover,#NewInlineTierCharts.right[active=\"active\"]{right:0;}" +
             "#NewInlineTierCharts,#NewInlineTierCharts li{margin:0;padding:0;list-style: none;display:block;}" +
             "#NewInlineTierCharts li{min-height:0.25em;}" +
             "#NewInlineTierCharts img{width:auto;display:none;background-color:#fff;}" +
