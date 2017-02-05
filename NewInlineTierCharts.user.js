@@ -52,7 +52,7 @@
     };
     var list = document.createElement ( "ul" );
     list.setAttribute ( "id", "NewInlineTierCharts" );
-    list.appendChild ( create ( "Switch Side", "", function () {
+    list.appendChild ( create ( "\u21C6", "", function () {
         this.parentNode.setAttribute("class",( this.parentNode.getAttribute ( "class" ) === "right" ? "" : "right" ));
     } ) );
     /**
