@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.5.2
+// @version        3.5.3
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -52,7 +52,7 @@
     };
     var list = document.createElement ( "ul" );
     list.setAttribute ( "id", "NewInlineTierCharts" );
-    list.appendChild ( create ( "Switch Side", "", function () {
+    list.appendChild ( create ( "\u21C6", "", function () {
         this.parentNode.setAttribute("class",( this.parentNode.getAttribute ( "class" ) === "right" ? "" : "right" ));
     } ) );
     /**
