@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.5.4
+// @version        3.5.5
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -116,6 +116,6 @@
             [ "NQ Map", "http://image.prntscr.com/image/14a4b5c29a0b4a0596f909c481050c02.png" ],
             [ "RT Map", "http://image.prntscr.com/image/10c56af4977c4bc19a128290a5405f83.png" ],
             [ "", "" ],
-            [ "ER", "http://vh9.5thplanetgames.com/images/zhelvos_loot.jpg" ]
+            [ "ER", "http://image.prntscr.com/image/2d4f8cae95494c5ba8b11daa5baaa7ef.png" ]
         ]
 );
