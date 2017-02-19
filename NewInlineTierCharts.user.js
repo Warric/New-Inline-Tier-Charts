@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.5.3
+// @version        3.5.4
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -97,7 +97,7 @@
             [ "", "" ],
             [ "Z1-9", "http://image.prntscr.com/image/4f72335bf6a44a699472fb174e487a28.png" ],
             [ "Small", "http://image.prntscr.com/image/ebe0a58b24d9468ab735f7b588129daa.png" ],
-            [ "Med", "http://image.prntscr.com/image/663ac3e4731e4aa7b7ade1f8e1b95251.png" ],
+            [ "Med", "http://image.prntscr.com/image/35be9e9ac5b4466cae5a1faa997499df.png" ],
             [ "Large", "http://image.prntscr.com/image/7e9b76a799e5409a8ae7413d6ac48375.png" ],
             [ "Epic", "http://image.prntscr.com/image/3ca7397851fe48dbbde979e5e9660726.png" ],
             [ "Colo", "http://image.prntscr.com/image/32ca6648468648dc83269be64f5f9c78.png" ],
@@ -106,7 +106,7 @@
             [ "", "" ],
             [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
-            [ "Guild 2/2", "http://image.prntscr.com/image/7df09c5b6cd8466dadb589a1ec0f91e8.png" ],
+            [ "Guild 2/2", "http://image.prntscr.com/image/1d2eb20b615f438282118e0f5d9cd5be.png" ],
             [ "", "" ],
             [ "BoB Map", "http://image.prntscr.com/image/f1b3999996334f42b293630ecf283bc9.png" ],
             [ "MaM Map", "http://image.prntscr.com/image/dd378a271f5e40979f2638f444ee0e7d.png" ],
@@ -116,6 +116,6 @@
             [ "NQ Map", "http://image.prntscr.com/image/14a4b5c29a0b4a0596f909c481050c02.png" ],
             [ "RT Map", "http://image.prntscr.com/image/10c56af4977c4bc19a128290a5405f83.png" ],
             [ "", "" ],
-            [ "WR", "http://image.prntscr.com/image/ba2b52e1a1fd47ee9afd1686f7481416.png" ]
+            [ "ER", "http://vh9.5thplanetgames.com/images/zhelvos_loot.jpg" ]
         ]
 );
