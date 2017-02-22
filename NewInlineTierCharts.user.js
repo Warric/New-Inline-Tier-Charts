@@ -93,7 +93,14 @@
             "#NewInlineTierCharts .btnLarge {background-color:rgba(236,119,1,1);}" + 
             "#NewInlineTierCharts .btnEpic {background-color:rgba(254,0,0,1);}" + 
             "#NewInlineTierCharts .btnColo {background-color:rgba(78,126,224,1);}" + 
-            "#NewInlineTierCharts .btnGiga {background-color:rgba(217,16,217,1);}"
+            "#NewInlineTierCharts .btnGiga {background-color:rgba(217,16,217,1);}" + 
+            "#NewInlineTierCharts .btnBoB-Map {background-color:rgba(53,28,117,1);}" + 
+            "#NewInlineTierCharts .btnMaM-Map {background-color:rgba(204,0,0,1);}" + 
+            "#NewInlineTierCharts .btnGD-Map {background-color:rgba(56,118,29,1);}" + 
+            "#NewInlineTierCharts .btnGoC-Map {background-color:rgba(255,229,153,1);}" + 
+            "#NewInlineTierCharts .btnFW-Map {background-color:rgba(74,134,232,1);}" + 
+            "#NewInlineTierCharts .btnNQ-Map {background-color:rgba(57,57,57,1);}" + 
+            "#NewInlineTierCharts .btnRT-Map {background-color:rgba(28,69,135,1);}"
             ) );
     window.addEventListener('resize',function() {
         document.getElementById("NewInlineTierChartsStyles").innerHTML = document.getElementById("NewInlineTierChartsStyles").innerHTML.replace(/(#NewInlineTierCharts .active div\{.*?max-width:)[0-9]+(px;.*?\})/,'$1'+(window.innerWidth-150)+'$2');
