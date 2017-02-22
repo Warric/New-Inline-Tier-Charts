@@ -45,7 +45,9 @@
             wrapper.firstChild.firstChild.setAttribute ( "alt", label );
         }
         if(label) {
-          wrapper.appendChild ( document.createElement ( "button" ) );
+          var btn = document.createElement ( "button" );
+          btn.setAttribute("class", "btn" + label.replace(" ", "-"));
+          wrapper.appendChild ( btn );
           wrapper.lastChild.appendChild ( document.createTextNode ( label ) );
         }
         return wrapper;
@@ -85,7 +87,13 @@
             "#NewInlineTierCharts button{border-radius:2px;background:#fff;height:auto;font-size: 12px;font-family: monospace;padding:1px;text-align: center;box-sizing: border-box;text-align:center;color:#000;border: 1px solid #000;width:75px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
             "#NewInlineTierCharts .active div{display:block;position:fixed;top:0;left:75px;z-index:100000;max-height:100%;max-width:"+(window.innerWidth-150)+"px;}" +
             "#NewInlineTierCharts.right .active div{left:auto;right:75px;}" +
-            "#NewInlineTierCharts .active button{background:#222;color:#fff;}"
+            "#NewInlineTierCharts .active button{background:#222;color:#fff;}" + 
+            "#NewInlineTierCharts .btnSmall {background-color:rgba(254,254,254,1);}" + 
+            "#NewInlineTierCharts .btnMed {background-color:rgba(254,254,0,1);}" + 
+            "#NewInlineTierCharts .btnLarge {background-color:rgba(236,119,1,1);}" + 
+            "#NewInlineTierCharts .btnEpic {background-color:rgba(254,0,0,1);}" + 
+            "#NewInlineTierCharts .btnColo {background-color:rgba(78,126,224,1);}" + 
+            "#NewInlineTierCharts .btnGiga {background-color:rgba(217,16,217,1);}"
             ) );
     window.addEventListener('resize',function() {
         document.getElementById("NewInlineTierChartsStyles").innerHTML = document.getElementById("NewInlineTierChartsStyles").innerHTML.replace(/(#NewInlineTierCharts .active div\{.*?max-width:)[0-9]+(px;.*?\})/,'$1'+(window.innerWidth-150)+'$2');
