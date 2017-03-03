@@ -102,7 +102,7 @@
             [ "Epic", "http://image.prntscr.com/image/3ca7397851fe48dbbde979e5e9660726.png" ],
             [ "Colo", "http://image.prntscr.com/image/32ca6648468648dc83269be64f5f9c78.png" ],
             [ "Giga", "http://image.prntscr.com/image/aec4152d67c943ada2f1a9658d6fa750.png" ],
-            [ "Elite", "http://image.prntscr.com/image/4dd259053e5a42f590523448797b52d4.png" ],
+            [ "Elite", "http://image.prntscr.com/image/2fe587b74d824bb4980a32b092792e72.png" ],
             [ "", "" ],
             [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
@@ -116,6 +116,7 @@
             [ "NQ Map", "http://image.prntscr.com/image/14a4b5c29a0b4a0596f909c481050c02.png" ],
             [ "RT Map", "http://image.prntscr.com/image/10c56af4977c4bc19a128290a5405f83.png" ],
             [ "", "" ],
-            [ "WR", "http://image.prntscr.com/image/7608fd3cb36449dfac7d7ead8853379d.png" ]
+            [ "WR", "http://image.prntscr.com/image/a722f9be750c4e1ea676bc37191109ed.png" ],
+            [ "ER", "http://image.prntscr.com/image/f7ce6b1e6c1a4e3a83ef82f25fd4a85c.png" ]
         ]
 );
