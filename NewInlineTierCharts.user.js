@@ -117,6 +117,9 @@
             [ "RT Map", "http://image.prntscr.com/image/10c56af4977c4bc19a128290a5405f83.png" ],
             [ "BHH Map", "http://image.prntscr.com/image/6ad2c236beda4bce8088b64a40d2c193.png" ],
             [ "", "" ],
-            [ "ER", "http://image.prntscr.com/image/364e98e8932044319bdfb265bea0baab.png" ]
+            [ "Gore Gob", "http://image.prntscr.com/image/d397d9d4f23a45d3887f4283f7a54b10.png" ],
+            [ "Snow", "http://image.prntscr.com/image/bf7dfd3f393647bd9704647b20934d05.png" ],
+            [ "Treachery", "http://image.prntscr.com/image/d34bc68fa6f645908069c2eb7c0d3d02.png" ],
+            [ "Glitters", "http://image.prntscr.com/image/4d425701f6f64fafa20490d83afc7f84.png" ]
         ]
 );
