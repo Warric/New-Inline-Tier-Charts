@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.5.10
+// @version        3.5.11
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -108,14 +108,14 @@
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
             [ "Guild 2/2", "http://image.prntscr.com/image/1d2eb20b615f438282118e0f5d9cd5be.png" ],
             [ "", "" ],
-            [ "BoB Map", "http://image.prntscr.com/image/f1b3999996334f42b293630ecf283bc9.png" ],
-            [ "MaM Map", "http://image.prntscr.com/image/dd378a271f5e40979f2638f444ee0e7d.png" ],
-            [ "GD Map", "http://image.prntscr.com/image/61350f40209243ffa416a3cd7fbe4931.png" ],
+            [ "BoB Map", "http://image.prntscr.com/image/5600754e9a294daeb006c210134a9889.png" ],
+            [ "MaM Map", "http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png" ],
+            [ "GD Map", "http://image.prntscr.com/image/aeaada2593784f29ab056098bae4e18b.png" ],
             [ "GoC Map", "http://image.prntscr.com/image/333019c25a0e435593a15ef78986539b.png" ],
             [ "FW Map", "http://image.prntscr.com/image/4d0e0f3a7d30407887e3e323ee5350c4.png" ],
             [ "NQ Map", "http://image.prntscr.com/image/14a4b5c29a0b4a0596f909c481050c02.png" ],
             [ "RT Map", "http://image.prntscr.com/image/10c56af4977c4bc19a128290a5405f83.png" ],
-            [ "BHH Map", "http://image.prntscr.com/image/6ad2c236beda4bce8088b64a40d2c193.png" ],
+            [ "BHH Map", "http://image.prntscr.com/image/81878f7876784f698e0b9cd66632e2d7.png" ],
             [ "", "" ],
             [ "Gore Gob", "http://image.prntscr.com/image/d397d9d4f23a45d3887f4283f7a54b10.png" ],
             [ "Snow", "http://image.prntscr.com/image/bf7dfd3f393647bd9704647b20934d05.png" ],
