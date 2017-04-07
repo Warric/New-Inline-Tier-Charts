@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.5.11
+// @version        3.5.12
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -97,12 +97,12 @@
             [ "", "" ],
             [ "Z1-9", "http://image.prntscr.com/image/4f72335bf6a44a699472fb174e487a28.png" ],
             [ "Small", "http://image.prntscr.com/image/ebe0a58b24d9468ab735f7b588129daa.png" ],
-            [ "Med", "http://image.prntscr.com/image/35be9e9ac5b4466cae5a1faa997499df.png" ],
+            [ "Medium", "http://image.prntscr.com/image/78fc2c3413e642e2a5ec46484dfbb46e.png" ],
             [ "Large", "http://image.prntscr.com/image/7e9b76a799e5409a8ae7413d6ac48375.png" ],
             [ "Epic", "http://image.prntscr.com/image/3ca7397851fe48dbbde979e5e9660726.png" ],
-            [ "Colo", "http://image.prntscr.com/image/32ca6648468648dc83269be64f5f9c78.png" ],
-            [ "Giga", "http://image.prntscr.com/image/aec4152d67c943ada2f1a9658d6fa750.png" ],
-            [ "Elite", "http://image.prntscr.com/image/2fe587b74d824bb4980a32b092792e72.png" ],
+            [ "Colossal", "http://image.prntscr.com/image/32ca6648468648dc83269be64f5f9c78.png" ],
+            [ "Gigantic", "http://image.prntscr.com/image/aec4152d67c943ada2f1a9658d6fa750.png" ],
+            [ "Elite", "http://image.prntscr.com/image/93ab6805ef37446cbbced5fe4c63b18e.png" ],
             [ "", "" ],
             [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
@@ -114,12 +114,9 @@
             [ "GoC Map", "http://image.prntscr.com/image/333019c25a0e435593a15ef78986539b.png" ],
             [ "FW Map", "http://image.prntscr.com/image/4d0e0f3a7d30407887e3e323ee5350c4.png" ],
             [ "NQ Map", "http://image.prntscr.com/image/14a4b5c29a0b4a0596f909c481050c02.png" ],
-            [ "RT Map", "http://image.prntscr.com/image/10c56af4977c4bc19a128290a5405f83.png" ],
+            [ "RT Map", "http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png" ],
             [ "BHH Map", "http://image.prntscr.com/image/81878f7876784f698e0b9cd66632e2d7.png" ],
             [ "", "" ],
-            [ "Gore Gob", "http://image.prntscr.com/image/d397d9d4f23a45d3887f4283f7a54b10.png" ],
-            [ "Snow", "http://image.prntscr.com/image/bf7dfd3f393647bd9704647b20934d05.png" ],
-            [ "Treachery", "http://image.prntscr.com/image/d34bc68fa6f645908069c2eb7c0d3d02.png" ],
-            [ "Glitters", "http://image.prntscr.com/image/4d425701f6f64fafa20490d83afc7f84.png" ]
+            [ "Lyrpan", "http://image.prntscr.com/image/18f65eb4b07c4e42bf4c23ce92d879c4.png" ]
         ]
 );
