@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.6.1
+// @version        3.6.2
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -116,7 +116,7 @@
             [ "FW Map", "http://image.prntscr.com/image/4d0e0f3a7d30407887e3e323ee5350c4.png" ],
             [ "NQ Map", "https://image.prntscr.com/image/993789c610e6447d9d178360b1b52ef7.png" ],
             [ "RT Map", "http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png" ],
-            [ "BHH Map", "https://image.prntscr.com/image/90a8d15a3af74342935bef75cef035be.png" ],
+            [ "BHH Map", "https://image.prntscr.com/image/06592f09a3d94f5c9b99add335e6ec46.png" ],
             [ "CC Map", "https://image.prntscr.com/image/74fb7865ebee467eae74d210d329ca42.png" ]
         ]
 );
