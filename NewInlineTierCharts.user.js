@@ -23,7 +23,7 @@
 // @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.6.3
+// @version        3.6.4
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -96,14 +96,14 @@
         [
             [ "", "" ],
             [ "Z1-9", "http://image.prntscr.com/image/4f72335bf6a44a699472fb174e487a28.png" ],
-            [ "Small", "http://image.prntscr.com/image/ebe0a58b24d9468ab735f7b588129daa.png" ],
+            [ "Small", "https://image.prntscr.com/image/WOtD-EqcQ1WBbbzVtuaElA.png" ],
             [ "Medium", "https://image.prntscr.com/image/88b1b4cbe4c34b7b9b4babe47b22cf37.png" ],
-            [ "Large", "http://image.prntscr.com/image/7e9b76a799e5409a8ae7413d6ac48375.png" ],
-            [ "Epic", "http://image.prntscr.com/image/3ca7397851fe48dbbde979e5e9660726.png" ],
+            [ "Large", "https://image.prntscr.com/image/etE3auhnRMeb-3y0-7AAow.png" ],
+            [ "Epic", "https://image.prntscr.com/image/GFiaLV4VQdKWo7hfpGBbtA.png" ],
             [ "Colossal", "https://image.prntscr.com/image/18204873f20f4521a3226d1438f51cc3.png" ],
-            [ "Gigantic", "https://image.prntscr.com/image/8a910269dcf3448e9e4a5a510825bdf9.png" ],
-            [ "Elite", "https://image.prntscr.com/image/15478aa3b6da41cba1d7a6fbb97271ea.png" ],
-            [ "Deadly", "https://image.prntscr.com/image/7c4a4271bc7f4dd588e0ad8679cf5b5a.png" ],
+            [ "Gigantic", "https://image.prntscr.com/image/sS0xtIeMQwm2XJYEw1MVrA.png" ],
+            [ "Elite", "https://image.prntscr.com/image/1o0iyT0rRyypgHvrNliJ_Q.png" ],
+            [ "Deadly", "https://image.prntscr.com/image/fAK4qKkQSNeINAjkZfAS7g.png" ],
             [ "", "" ],
             [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
@@ -117,6 +117,6 @@
             [ "NQ Map", "https://image.prntscr.com/image/993789c610e6447d9d178360b1b52ef7.png" ],
             [ "RT Map", "http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png" ],
             [ "BHH Map", "https://image.prntscr.com/image/06592f09a3d94f5c9b99add335e6ec46.png" ],
-            [ "CC Map", "https://image.prntscr.com/image/74fb7865ebee467eae74d210d329ca42.png" ]
+            [ "CC Map", "https://image.prntscr.com/image/eyRPCdBhTEWidcCmrZmlDw.png" ]
         ]
 );
