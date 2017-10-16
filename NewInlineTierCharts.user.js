@@ -20,10 +20,10 @@
 // @include        http://www.newgrounds.com/portal/view/609826*
 // @include        http://newgrounds.com/portal/view/609826*
 // @include        http://dawnofthedragons.com/
-// @include        http://armorgames.com/dawn-of-the-dragons-game/13509*
-// @include        http://www.armorgames.com/dawn-of-the-dragons-game/13509*
-// @include        http://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.6.5
+// @include        https://armorgames.com/dawn-of-the-dragons-game/13509*
+// @include        https://www.armorgames.com/dawn-of-the-dragons-game/13509*
+// @include        https://armorgames.com/play/13509/dawn-of-the-dragons*
+// @version        3.6.6
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
