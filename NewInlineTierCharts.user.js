@@ -23,7 +23,7 @@
 // @include        https://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.6.6
+// @version        3.6.7
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
