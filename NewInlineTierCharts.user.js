@@ -17,13 +17,12 @@
 // @include        http://dawnofthedragons.com/game*
 // @include        https://apps.facebook.com/dawnofthedragons*
 // @include        http://web1.dawnofthedragons.com/live_standalone*
-// @include        http://www.newgrounds.com/portal/view/609826*
-// @include        http://newgrounds.com/portal/view/609826*
+// @include        *newgrounds.com/portal/view/609826*
 // @include        http://dawnofthedragons.com/
 // @include        https://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.6.7
+// @version        3.6.8
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
