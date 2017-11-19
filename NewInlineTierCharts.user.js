@@ -22,7 +22,7 @@
 // @include        https://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.6.9
+// @version        3.6.10
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -102,7 +102,7 @@
             [ "Colossal", "https://image.prntscr.com/image/J_RPmnNXRLWoFVfRvIu0zA.png" ],
             [ "Gigantic", "https://image.prntscr.com/image/sS0xtIeMQwm2XJYEw1MVrA.png" ],
             [ "Elite", "https://image.prntscr.com/image/U2wZhnQjSJ_05NkAhwb8Yw.png" ],
-            [ "Deadly", "https://image.prntscr.com/image/rGCJU9xiQqyZnesUl-Jepw.png" ],
+            [ "Deadly", "https://image.prntscr.com/image/zvvcKMnRSYqNsWkHpxu76Q.png" ],
             [ "", "" ],
             [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
