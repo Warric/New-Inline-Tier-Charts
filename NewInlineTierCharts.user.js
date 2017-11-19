@@ -22,7 +22,7 @@
 // @include        https://armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://www.armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        https://armorgames.com/play/13509/dawn-of-the-dragons*
-// @version        3.6.8
+// @version        3.6.9
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -97,16 +97,16 @@
             [ "Z1-9", "http://image.prntscr.com/image/4f72335bf6a44a699472fb174e487a28.png" ],
             [ "Small", "https://image.prntscr.com/image/WOtD-EqcQ1WBbbzVtuaElA.png" ],
             [ "Medium", "https://image.prntscr.com/image/88b1b4cbe4c34b7b9b4babe47b22cf37.png" ],
-            [ "Large", "https://image.prntscr.com/image/etE3auhnRMeb-3y0-7AAow.png" ],
-            [ "Epic", "https://image.prntscr.com/image/GFiaLV4VQdKWo7hfpGBbtA.png" ],
-            [ "Colossal", "https://image.prntscr.com/image/18204873f20f4521a3226d1438f51cc3.png" ],
+            [ "Large", "https://image.prntscr.com/image/8_IFvSpTSGGj9Vxh84A4tQ.png" ],
+            [ "Epic", "https://image.prntscr.com/image/OR0CZZaVRSetc-zCl5l83Q.png" ],
+            [ "Colossal", "https://image.prntscr.com/image/J_RPmnNXRLWoFVfRvIu0zA.png" ],
             [ "Gigantic", "https://image.prntscr.com/image/sS0xtIeMQwm2XJYEw1MVrA.png" ],
-            [ "Elite", "https://image.prntscr.com/image/1o0iyT0rRyypgHvrNliJ_Q.png" ],
-            [ "Deadly", "https://image.prntscr.com/image/fAK4qKkQSNeINAjkZfAS7g.png" ],
+            [ "Elite", "https://image.prntscr.com/image/U2wZhnQjSJ_05NkAhwb8Yw.png" ],
+            [ "Deadly", "https://image.prntscr.com/image/rGCJU9xiQqyZnesUl-Jepw.png" ],
             [ "", "" ],
             [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
-            [ "Guild 2/2", "https://image.prntscr.com/image/9mMy9WMHTkq9A6jR5mRwHQ.png" ],
+            [ "Guild 2/2", "https://image.prntscr.com/image/eZEoOxvTT6yZBDZoM_6haw.png" ],
             [ "", "" ],
             [ "BoB Map", "http://image.prntscr.com/image/5600754e9a294daeb006c210134a9889.png" ],
             [ "MaM Map", "http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png" ],
