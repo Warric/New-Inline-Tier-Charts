@@ -117,6 +117,6 @@
             [ "RT Map", "http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png" ],
             [ "BHH Map", "https://image.prntscr.com/image/06592f09a3d94f5c9b99add335e6ec46.png" ],
             [ "CC Map", "https://image.prntscr.com/image/eyRPCdBhTEWidcCmrZmlDw.png" ],
-            [ "IH Map", "https://image.prntscr.com/image/yqtbR46FRwWmnkUy2xjAbQ.png" ]   
+            [ "IH Map", "https://image.prntscr.com/image/QXwcaZ1rSX2IxUzZyginHw.png" ]   
         ]
 );
