@@ -53,7 +53,7 @@
         }
     }
     class Table extends ButtonWithContent {
-        constructor(title, columns, lines) {
+        constructor(title, columns, lines, comment) {
             super(title);
             var table = document.createElement('table');
             var width = Math.floor(100 / (columns.length > 4 ? columns.length + 2 : columns.length));
@@ -77,6 +77,10 @@
             }
             this.element.appendChild(document.createElement('div'));
             this.element.lastChild.appendChild(table);
+            if(comment) {
+                this.element.lastChild.appendChild(document.createElement('p'));
+                this.element.lastChild.lastChild.appendChild(comment);
+            }
         }
     }
     class Image extends ButtonWithContent {
@@ -148,14 +152,49 @@
         new Table(
             'Z1-9', ['Name', 'AP', '2/9'], [
                 ['Alice', '300k', '1.23m'],
-                ['Lurking Horror', '350k', '1.54m'],
                 ['Ataxes', '200k', '480k'],
-                ['Maraak', '1.5m', '3.6m'],
                 ['Baroness', '1.36m', '5.576m'],
+                ['Bellarius', '1.8m', '5.576m'],
+                ['Bloodmane', '700k', '1.68m'],
+                ['Bogstench', '1.8m', '2.25m'],
+                ['Briareus', '450k', '1.08m'],
+                ['Erakka-Sak', '1.24m', '5.084m'],
+                ['Erebus', '600k', '750k'],
+                ['Gravlok', '500k', '2.2m'],
+                ['Grimsly', '1.44m', '5.904m'],
+                ['Grune', '200k', '880k'],
+                ['Guilbert', '2.2.m', '2.75m'],
+                ['Gunnar', '1.2m', '2.88m'],
+                ['Hargamesh', '1.8m', '4.32m'],
+                ['Horgrak', '15k', '36k'],
+                ['Hydra', '650k', '2.86m'],
+                ['Ironclad', '1m', '2.4m'],
+                ['Kalaxia', '1.6m', '2.08m'],
+                ['Kang-Gsod', '950k', '4.18m']
+                ['Kerberos', '700k', '2.87m'],
+                ['Lurking Horror', '350k', '1.54m'],
+                ['Maraak', '1.5m', '3.6m'],
                 ['Mardachus', '2.2m', '2.86m'],
+                ['Mazalu', '100k', '410k'],
+                ['Mesyra', '4m', '5m'],
+                ['Nalagarst', '1.4m', '1.82m'],
+                ['Nidhogg', '1.04m', '4.264m'],
+                ['Nimrod', '4.8m', '6m'],
+                ['Phaedra', '5.6m', '7m'],
+                ['Rift', '1.25m', '5.5m'],
+                ['Scylla', '500k', '2.05k'],
+                ['Sir Cai', '1.4m', '1.75m'],
+                ['Sisters', '2.4m', '3m'],
+                ['Stein', '800k', '3.52m'],
+                ['Tainted Erebus', '1m', '1.25m'],
+                ['Tenebra', '4m', '5.2m'],
+                ['Tyranthius', '1.2m', '1.56m'],
+                ['Ulfrik', '2m', '2.5m'],
+                ['Valanazes', '4.8m', '6.24m'],
+                ['Wexxa', '1.1m', '4.84m'],
+                ['Zombie', '900k', '3.69m'],
             ]
         ),
-        new Image("Z1-9", "http://image.prntscr.com/image/4f72335bf6a44a699472fb174e487a28.png"),
         new Table(
             'Small', ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'], [
                 ['Alchemist', '400m', '400m', '1.5b', '400m/500m/650m/800m/1b/1.25b/1.5b'],
