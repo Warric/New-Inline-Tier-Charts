@@ -124,6 +124,7 @@
             styles.setAttribute("type", "text/css");
             styles.setAttribute("id", "NewInlineTierChartsStyles");
             styles.appendChild(document.createTextNode(
+                "#NewInlineTierCharts p, #NewInlineTierCharts button, #NewInlineTierCharts table{font-size:11px;font-family: monospace}" +  
                 "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;max-height:100%;}" +
                 "#NewInlineTierCharts:hover,#NewInlineTierCharts[active=\"active\"]{left:0;}" +
                 "#NewInlineTierCharts.right{left:auto;right:-65px;}" +
@@ -132,11 +133,11 @@
                 "#NewInlineTierCharts li{min-height:0.25em;}" +
                 "#NewInlineTierCharts img{width:auto;height:auto;display:block;background-color:#fff;}" +
                 "#NewInlineTierCharts div{padding:1px;width:auto;max-height:100%;display:none;overflow-x:hidden;overflow-y:auto;}" +
-                "#NewInlineTierCharts button{border-radius:2px;background:#fff;height:auto;font-size: 12px;font-family: monospace;padding:1px;text-align: center;box-sizing: border-box;text-align:center;color:#000;border: 1px solid #000;width:75px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
+                "#NewInlineTierCharts button{border-radius:2px;background:#fff;height:auto;font-size: 13px;padding:1px;text-align: center;box-sizing: border-box;text-align:center;color:#000;border: 1px solid #000;width:75px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
                 "#NewInlineTierCharts .active div{display:block;position:fixed;top:0;left:75px;z-index:100000;}" +
-                "#NewInlineTierCharts.right .active div{left:auto;right:75px;}" +
+                "#NewInlineTierCharts.right .active div{left:auto;right:75px;}" +              
                 "#NewInlineTierCharts .active button{background:#222;color:#fff;}" +
-                "#NewInlineTierCharts table{font-size:11px;max-width:100%;text-align:center;border-collapse:collapse;padding:1px;}" +
+                "#NewInlineTierCharts table{max-width:100%;text-align:center;border-collapse:collapse;padding:1px;}" +
                 "#NewInlineTierCharts td,#NewInlineTierCharts th{border:1px #ddd solid;}" +
                 "#NewInlineTierCharts thead > tr > th{border-bottom:1px #000 solid;}" +
                 "#NewInlineTierCharts tbody > tr > td{color:#222;border-top:1px #000 solid;border-bottom:1px #000 solid;}" +
