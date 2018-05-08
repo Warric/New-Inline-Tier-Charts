@@ -273,7 +273,7 @@
                 ['Verkiteia', '112.5m', '250m', '1.5b', '100m/175m/250m/300m/375m/450m/525m/600m/900m/1.5b'],
                 ['Z\'ralk\'thalat', '175m', '200m', '1b', '100m/200m/300m/400m/500m/600m/700m/800m/900m/1b']
             ],
-                "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*",
+            "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
         new Table(
             "Epic",
@@ -302,7 +302,7 @@
                 ['Void Queen', '1.69t', '12t', '40t', '1.5t/3t/8t/12t/25t/40t'],
                 ['Yydian', '100m', '250m', '1.5b', '125m/175m/250m/300m/375m/450m/525m/625m/900m/1.5b']
             ],
-                "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*",
+            "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
         new Table(
             "Colossal",
@@ -354,9 +354,9 @@
                 ['Red Snow', '2.084b', '3b', '150b', '2b/2.5b/3b/4b/5b/6b/7b/8b/9b/10b/12.5b/15b/17.5b/20b/25b/30b/40b/50b/60b/70b/80b/90b/100b/125b/150b'],
                 ['Trekex', '625m', '4b', '20b', '750m/1b/1.25b/1.5b/1.75b/2b/2.5b/3b/3.5b/4b/4.5b/5b/6b/7b/8b/9b/10b/12.5b/15b/17.5b/20b'],
                 ['Wilds', '812.5m', '3b', '40b', '1b/1.5b/2b/2.5b/3b/4b/5b/6b/7b/8b/9b/10b/12.5b/15b/17.5b/20b/25b/30b/40b'],
-                ['Winter Wyrm', '25b', '25b', '500b', '25b/30b/40b/50b/75b/100b/150b/200b/300b/400b/500b'],
-            "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
+                ['Winter Wyrm', '25b', '25b', '500b', '25b/30b/40b/50b/75b/100b/150b/200b/300b/400b/500b']
             ],
+            "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
         new Table(
             "Elite",
@@ -425,7 +425,9 @@
             ]
         ),
         new Table(
-            'Guild 1', ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'], [
+            'Guild 1',
+            ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
+            [
                 ['Adrastos', '50m', '55.5m', '1b', '16.5m/25.5m/35m/45m/55.5m/66.5m/78m/90m/103m/116m/129m/143m/158m/173m/188m/204m/221m/238m/255m/273m/292m/311m/330m/350m/1b'],
                 ['Apoc Demon', '20m', '40m', '180m', '12m/28m/36m/40m/60m/80m/100m/120m/140m/160m/180m'],
                 ['Bog Bodies', '75m', '78m', '1b', '16.5m/25.5m/35m/45m/55.5m/66.5m/78m/90m/103m/116m/129m/143m/158m/173m/188m/204m/221m/238m/255m/273m/292m/311m/330m/350m/1b'],
@@ -444,7 +446,7 @@
                 ['Salome', '6.66m', '26.6m', '120m', '13.3m/18.6m/24m/26.6m/40m/53.3m/66.6m/79.9m/93.2m/107m/120m'],
                 ['Tuxargus', '20m', '80m', '360m', '40m/56m/72m/80m/120m/160m/200m/240m/280m/320m/360m'],
                 ['Xessus', '5m', '20m', '90m', '10m/14m/18m/20m/30m/40m/50m/60m/70m/80m/90m']
-            ],
+            ]
         ),
         new Table(
             "Guild 2",
@@ -465,7 +467,7 @@
                 ['Vathik', 'No AP', '1b', '70t', '1b/2b/3b/5b/10b/15b/20b/30b/40b/50b/100b/150b/200b/300b/600b/800b/1t/3t/5t/8t/10t/20t/50t/60t/70t'],
                 ['Whitepelts', '3b', '3b', '50b', '3b/4b/5b/7.5b/10b/15b/20b/25b/50b'],
                 ['Xax\'zisz', '26b', '100b', '500b', '15b/30b/50b/80b/100b/200b/500b']
-            ],
+            ]
         ),
 
         new Splitter(),
