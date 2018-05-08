@@ -132,7 +132,7 @@
                 "#NewInlineTierCharts,#NewInlineTierCharts li{margin:0;padding:0;list-style: none;display:block;}" +
                 "#NewInlineTierCharts li{min-height:0.25em;}" +
                 "#NewInlineTierCharts img{width:auto;height:auto;display:block;background-color:#fff;}" +
-                "#NewInlineTierCharts div{padding:1px;width:auto;max-height:100%;display:none;overflow-x:hidden;overflow-y:auto;}" +
+                "#NewInlineTierCharts div{padding:1px;width:auto;max-height:100%;display:none;overflow-x:hidden;overflow-y:auto;background:#fff;}" +
                 "#NewInlineTierCharts button{border-radius:2px;background:#fff;height:auto;font-size: 13px;padding:1px;text-align: center;box-sizing: border-box;text-align:center;color:#000;border: 1px solid #000;width:75px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
                 "#NewInlineTierCharts .active div{display:block;position:fixed;top:0;left:75px;z-index:100000;}" +
                 "#NewInlineTierCharts.right .active div{left:auto;right:75px;}" +              
