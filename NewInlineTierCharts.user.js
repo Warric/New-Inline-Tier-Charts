@@ -124,7 +124,7 @@
             styles.setAttribute("type", "text/css");
             styles.setAttribute("id", "NewInlineTierChartsStyles");
             styles.appendChild(document.createTextNode(
-                "#NewInlineTierCharts p, #NewInlineTierCharts button, #NewInlineTierCharts table{font-size:11px;font-family: monospace}" +  
+                "#NewInlineTierCharts p, #NewInlineTierCharts button, #NewInlineTierCharts table{font-size:11px;font-family: monospace}" +
                 "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;max-height:100%;}" +
                 "#NewInlineTierCharts:hover,#NewInlineTierCharts[active=\"active\"]{left:0;}" +
                 "#NewInlineTierCharts.right{left:auto;right:-65px;}" +
@@ -135,7 +135,7 @@
                 "#NewInlineTierCharts div{padding:1px;width:auto;max-height:100%;display:none;overflow-x:hidden;overflow-y:auto;background:#fff;}" +
                 "#NewInlineTierCharts button{border-radius:2px;background:#fff;height:auto;font-size: 13px;padding:1px;text-align: center;box-sizing: border-box;text-align:center;color:#000;border: 1px solid #000;width:75px;display:block;background-color:#fff;background-image:linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(0,0,0,0.1));font-weight:normal;line-height:normal;}" +
                 "#NewInlineTierCharts .active div{display:block;position:fixed;top:0;left:75px;z-index:100000;}" +
-                "#NewInlineTierCharts.right .active div{left:auto;right:75px;}" +              
+                "#NewInlineTierCharts.right .active div{left:auto;right:75px;}" +
                 "#NewInlineTierCharts .active button{background:#222;color:#fff;}" +
                 "#NewInlineTierCharts table{max-width:100%;text-align:center;border-collapse:collapse;padding:1px;}" +
                 "#NewInlineTierCharts td,#NewInlineTierCharts th{border:1px #ddd solid;}" +
@@ -202,7 +202,7 @@
                 ['Ulfrik', '2m', '2.5m'],
                 ['Valanazes', '4.8m', '6.24m'],
                 ['Wexxa', '1.1m', '4.84m'],
-                ['Zombie', '900k', '3.69m'],
+                ['Zombie', '900k', '3.69m']
             ]
         ),
         new Table(
@@ -331,7 +331,7 @@
                 ['Stampede', '4.5b', '5b', '150b', '5b/10b/15b/20b/25b/30b/40b/50b/60b/80b/100b/150b'],
                 ['Vortex', '205m', '400m', '3.5b', '200m/300m/400m/500m/600m/700m/800m/900m/1b/1.5b/2b/2.5b/3b/3.5b'],
                 ['Way Warden', '460m', '500m', '25b', '400m/500m/600m/700m/800m/880m/1b/1.25b/1.5b/1.75b/2b/2.25b/2.5b/2.75b/3b/4b/5b/6b/8b/10b/12.5b/15b/20b/25b'],
-                ['Xerkara', '260m', '300m', '8b', '300m/400m/750m/1b/1.5b/2.5b/5b/8b'],
+                ['Xerkara', '260m', '300m', '8b', '300m/400m/750m/1b/1.5b/2.5b/5b/8b']
             ],
             "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
@@ -422,7 +422,7 @@
                 ['Slaughterers', '2.4m', '5.76m', '16.8m'],
                 ['Tetrarchos', '1.8m', '7.38m', '30.6m'],
                 ['Tithrasia', '1.8m', '4.32m', '12.6m'],
-                ['Varlachlech', '3.3m', '14.5m', '59.4m'],
+                ['Varlachlech', '3.3m', '14.5m', '59.4m']
             ]
         ),
         new Table(
@@ -470,7 +470,6 @@
                 ['Xax\'zisz', '26b', '100b', '500b', '15b/30b/50b/80b/100b/200b/500b']
             ]
         ),
-
         new Splitter(),
         new Image('BoB Map', 'http://image.prntscr.com/image/5600754e9a294daeb006c210134a9889.png'),
         new Image('MaM Map', 'http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png'),
