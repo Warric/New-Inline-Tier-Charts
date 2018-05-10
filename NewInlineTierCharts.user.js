@@ -41,7 +41,7 @@
         }
     };
     class NITCButtonWithContent extends NITCButton {
-        constructor(title, background) {
+        constructor(title, background, color) {
             super(title, function() {
                 let status = this.getAttribute("class") === "active" ? "" : "active";
                 for (let counter = 0; counter < this.parentNode.childNodes.length; counter++) {
@@ -51,14 +51,18 @@
                 this.parentNode.setAttribute("active", status);
             });
             this.element.appendChild(document.createElement('div'));
-            if (background) {
-                this.element.lastChild.setAttribute('style', 'background:'+background);
+            if (background && color) {
+                this.element.lastChild.setAttribute('style', 'background:'+background+';color:'+color);
+            } else if (background) {
+                this.element.lastChild.setAttribute('style', 'background:'+color);
+            } else if (color) {
+                this.element.lastChild.setAttribute('style', 'color:'+color);
             }
         }
     };
     class NITCTable extends NITCButtonWithContent {
-        constructor(title, columns, lines, comment, background) {
-            super(title, background);
+        constructor(title, columns, lines, comment, background, color) {
+            super(title, background, color);
             let table = document.createElement('table');
             let oversizedLastColumn = columns[columns.length-1] === 'All Tiers';
             let width = Math.floor(100 / (oversizedLastColumn ? columns.length + 2 : columns.length));
@@ -88,16 +92,16 @@
         }
     };
     class NITCImage extends NITCButtonWithContent {
-        constructor(title, url, background) {
-            super(title, background);
+        constructor(title, url, background, color) {
+            super(title, background, color);
             this.element.lastChild.appendChild(document.createElement('img'));
             this.element.lastChild.lastChild.setAttribute('alt', title);
             this.element.lastChild.lastChild.setAttribute('src', url);
         }
     };
     class NITCTableAndImage extends NITCTable {
-        constructor(title, url, columns, lines, comment, background) {
-            super(title, columns, lines, '', background);
+        constructor(title, url, columns, lines, comment, background, color) {
+            super(title, columns, lines, '', background, color);
             this.element.lastChild.appendChild(document.createElement('img'));
             this.element.lastChild.lastChild.setAttribute('alt', title);
             this.element.lastChild.lastChild.setAttribute('src', url);
@@ -516,7 +520,8 @@
                 ['15b', '252', '74/52', '']
             ],
             '',
-            'purple'
+            'purple',
+            'white'
         ),
         new NITCImage('MaM Map', 'http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png'),
         new NITCImage('GD Map', 'http://image.prntscr.com/image/aeaada2593784f29ab056098bae4e18b.png'),
