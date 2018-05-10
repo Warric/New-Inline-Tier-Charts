@@ -52,11 +52,11 @@
             });
             this.element.appendChild(document.createElement('div'));
             if (background && color) {
-                this.element.lastChild.setAttribute('style', 'background:'+background+';color:'+color);
+                this.element.lastChild.setAttribute('style', 'background:'+background+';color:white');
             } else if (background) {
                 this.element.lastChild.setAttribute('style', 'background:'+color);
             } else if (color) {
-                this.element.lastChild.setAttribute('style', 'color:'+color);
+                this.element.lastChild.setAttribute('style', 'color:white');
             }
         }
     };
@@ -141,7 +141,7 @@
                 "#NewInlineTierCharts table{max-width:100%;text-align:center;border-collapse:collapse;padding:1px;}" +
                 "#NewInlineTierCharts td,#NewInlineTierCharts th{border:1px #ddd solid;}" +
                 "#NewInlineTierCharts thead > tr > th{border-bottom:1px #000 solid;font-weight:bold;}" +
-                "#NewInlineTierCharts tbody > tr > td{color:#222;border-top:1px #000 solid;border-bottom:1px #000 solid;}" +
+                "#NewInlineTierCharts tbody > tr > td{border-top:1px #000 solid;border-bottom:1px #000 solid;}" +
                 "#NewInlineTierCharts tbody > tr > td:nth-of-type(1){text-align:left;}" +
                 "#NewInlineTierCharts tbody > tr:nth-of-type(2n-1) > td{background:rgba(0,0,0,0.2);}"
             ));
@@ -514,7 +514,7 @@
             '',
             'https://nitc.idrinth.de/bob_map.jpg',
             'purple',
-            'white'
+            true
         ),
         new NITCImage('MaM Map', 'http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png'),
         new NITCImage('GD Map', 'http://image.prntscr.com/image/aeaada2593784f29ab056098bae4e18b.png'),
@@ -545,8 +545,8 @@
                 ['800b', '-', '-', '-', '20935 SP, 5384 Crafts', 'Total = 17979'],
                 ['1t', '-', '-', '-', '24794SP, 6750 Crafts', 'Total = 22474']
             ],
-            'https://nitc.idrinth.de/cc_map.jpg',
             '',
+            'https://nitc.idrinth.de/cc_map.jpg',
             'gold'
         ),
         new NITCImage('IH Map', 'https://image.prntscr.com/image/QXwcaZ1rSX2IxUzZyginHw.png')
