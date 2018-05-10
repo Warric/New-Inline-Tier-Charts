@@ -63,7 +63,7 @@
             let width = Math.floor(100 / (columns.length > 4 ? columns.length + 2 : columns.length));
             table.appendChild(document.createElement('thead'));
             table.lastChild.appendChild(document.createElement('tr'));
-            for (let column in columns) {
+            for (let column=0; column < columns.length; column++) {
                 table.lastChild.lastChild.appendChild(document.createElement('th'));
                 table.lastChild.lastChild.lastChild.setAttribute('style', 'width:' + width + '%');
                 table.lastChild.lastChild.lastChild.appendChild(document.createTextNode(columns[column]));
@@ -72,9 +72,9 @@
                 table.lastChild.lastChild.lastChild.setAttribute('style', 'width:' + (3 * width) + '%');
             }
             table.appendChild(document.createElement('tbody'));
-            for (let line in lines) {
+            for (let line = 0; line < lines.length; line++) {
                 table.lastChild.appendChild(document.createElement('tr'));
-                for (let column in lines[line]) {
+                for (let column = 0; column < lines[line].length; column++) {
                     table.lastChild.lastChild.appendChild(document.createElement('td'));
                     table.lastChild.lastChild.lastChild.appendChild(document.createTextNode((lines[line][column]+'').replace(/\//g, ' / ')));
                 }
@@ -114,7 +114,7 @@
             .element);
         element.appendChild((new NITCSplitter()).element);
         element.setAttribute('id', 'NewInlineTierCharts');
-        for (let item in list) {
+        for (let item = 0; item < list.length; item++) {
             if(!list[item] || !list[item].element) {
                 console.log(item+" failed to have an element");
                 continue;
