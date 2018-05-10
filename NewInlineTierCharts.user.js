@@ -128,7 +128,7 @@
             styles.setAttribute("type", "text/css");
             styles.setAttribute("id", "NewInlineTierChartsStyles");
             styles.appendChild(document.createTextNode(
-                "#NewInlineTierCharts p, #NewInlineTierCharts button, #NewInlineTierCharts table{font-size:11px;font-family: monospace}" +
+                "#NewInlineTierCharts p, #NewInlineTierCharts button, #NewInlineTierCharts table{font-size:11px;font-family: monospace;text-align: center;}" +
                 "#NewInlineTierCharts{position:fixed;top:0;left:-65px;z-index:100000;max-height:100%;}" +
                 "#NewInlineTierCharts:hover,#NewInlineTierCharts[active=\"active\"]{left:0;}" +
                 "#NewInlineTierCharts.right{left:auto;right:-65px;}" +
@@ -145,6 +145,7 @@
                 "#NewInlineTierCharts td,#NewInlineTierCharts th{border:1px #ddd solid;}" +
                 "#NewInlineTierCharts thead > tr > th{border-bottom:1px #000 solid;font-weight:bold;}" +
                 "#NewInlineTierCharts tbody > tr > td{color:#222;border-top:1px #000 solid;border-bottom:1px #000 solid;}" +
+                "#NewInlineTierCharts tbody > tr > td:nth-of-type(1){text-align:left;}" +
                 "#NewInlineTierCharts tbody > tr:nth-of-type(2n-1) > td{background:rgba(0,0,0,0.2);}"
             ));
             return styles;
