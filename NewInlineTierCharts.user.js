@@ -60,7 +60,8 @@
         constructor(title, columns, lines, comment, background) {
             super(title, background);
             let table = document.createElement('table');
-            let width = Math.floor(100 / (columns.length > 4 ? columns.length + 2 : columns.length));
+            let oversizedLastColumn = columns[columns.length-1] === 'All Tiers';
+            let width = Math.floor(100 / (oversizedLastColumn ? columns.length + 2 : columns.length));
             table.appendChild(document.createElement('thead'));
             table.lastChild.appendChild(document.createElement('tr'));
             for (let column=0; column < columns.length; column++) {
@@ -68,7 +69,7 @@
                 table.lastChild.lastChild.lastChild.setAttribute('style', 'width:' + width + '%');
                 table.lastChild.lastChild.lastChild.appendChild(document.createTextNode(columns[column]));
             }
-            if (columns.length > 4) {
+            if (oversizedLastColumn) {
                 table.lastChild.lastChild.lastChild.setAttribute('style', 'width:' + (3 * width) + '%');
             }
             table.appendChild(document.createElement('tbody'));
