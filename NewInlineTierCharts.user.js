@@ -61,7 +61,7 @@
         }
     };
     class NITCTable extends NITCButtonWithContent {
-        constructor(title, columns, lines, comment, background, color) {
+        constructor(title, columns, lines, comment, url, background, color) {
             super(title, background, color);
             let table = document.createElement('table');
             let oversizedLastColumn = columns[columns.length-1] === 'All Tiers';
@@ -85,6 +85,11 @@
                 }
             }
             this.element.lastChild.appendChild(table);
+            if(url) {
+                this.element.lastChild.appendChild(document.createElement('img'));
+                this.element.lastChild.lastChild.setAttribute('alt', title);
+                this.element.lastChild.lastChild.setAttribute('src', url);
+            }
             if(comment) {
                 this.element.lastChild.appendChild(document.createElement('p'));
                 this.element.lastChild.lastChild.appendChild(document.createTextNode (comment));
@@ -97,18 +102,6 @@
             this.element.lastChild.appendChild(document.createElement('img'));
             this.element.lastChild.lastChild.setAttribute('alt', title);
             this.element.lastChild.lastChild.setAttribute('src', url);
-        }
-    };
-    class NITCTableAndImage extends NITCTable {
-        constructor(title, url, columns, lines, comment, background, color) {
-            super(title, columns, lines, '', background, color);
-            this.element.lastChild.appendChild(document.createElement('img'));
-            this.element.lastChild.lastChild.setAttribute('alt', title);
-            this.element.lastChild.lastChild.setAttribute('src', url);
-            if(comment) {
-                this.element.lastChild.appendChild(document.createElement('p'));
-                this.element.lastChild.lastChild.appendChild(document.createTextNode (comment));
-            }
         }
     };
     (function(list) {
@@ -494,9 +487,8 @@
             ]
         ),
         new NITCSplitter(),
-        new NITCTableAndImage(
+        new NITCTable(
             'BoB Map',
-            'https://nitc.idrinth.de/bob_map.jpg',
             ['Tier', 'Total', 'CU/RE', 'Comments'],
             [
                 ['5m', '62', '31/0', ''],
@@ -520,6 +512,7 @@
                 ['15b', '252', '74/52', '']
             ],
             '',
+            'https://nitc.idrinth.de/bob_map.jpg',
             'purple',
             'white'
         ),
@@ -530,9 +523,8 @@
         new NITCImage('NQ Map', 'https://image.prntscr.com/image/993789c610e6447d9d178360b1b52ef7.png'),
         new NITCImage('RT Map', 'http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png'),
         new NITCImage('BHH Map', 'https://image.prntscr.com/image/06592f09a3d94f5c9b99add335e6ec46.png'),
-        new NITCTableAndImage(
+        new NITCTable(
             'CC Map',
-            'https://nitc.idrinth.de/cc_map.jpg',
             ['Tier', 'Young Drake', 'Scarred Drake', 'Thorned Wyrm', 'Gilded Dragon(Gold)', 'Yathestraz'],
             [
                 ['1b', 'Total = 28', 'Total = 28', '', '-', ''],
@@ -553,6 +545,7 @@
                 ['800b', '-', '-', '-', '20935 SP, 5384 Crafts', 'Total = 17979'],
                 ['1t', '-', '-', '-', '24794SP, 6750 Crafts', 'Total = 22474']
             ],
+            'https://nitc.idrinth.de/cc_map.jpg',
             '',
             'gold'
         ),
