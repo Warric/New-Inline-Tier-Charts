@@ -218,7 +218,7 @@
                 ['Bad Blood', '534m', '1.5b', '5b', '500m/800m/1b/1.25b/1.5b/2b/2.5b/5b'],
                 ['Bakku', '440m', '500m', '2b', '400m/500m/650m/800m/1b/1.25b/1.5b/2b'],
                 ['Bloodsuckers', '1.75b', '2.5b', '10b', '2b/2.5b/5b/7.5b/10b'],
-                ['Garganoth', '34.67b', '70b', '1.9t', '35b/40b/50b/70b/80b/130b/180b/300b/400b/700b/900b/1t/1.9t'],
+                ['Garganoth', '34.67b', '70b', '1.9t', '35b/40b/50b/70b/80b/130b/180b/275b/380b/650b/900b/1t/1.9t'],
                 ['Krugnug', '80m', '100m', '1b', '100m/200m/300m/400m/500m/600m/700m/800m/900m/1t'],
                 ['Lair', '57.7m', '150m', '675m', '105m/135m/150m/225m/300m/375m/450m/525m/600m/675m'],
                 ['Nereidon', '250m', '300m', '5b', '240m/300m/400m/750m/1b/1.5b/2.5b/5b'],
@@ -380,6 +380,7 @@
                 ['E. Funny Bones', 'No AP', '70b', '150b', '10b/20b/25b/30b/35b/40b/45b/50b/55b/60b/70b/80b/90b/100b/125b/150b'],
                 ['E. Initiates', 'No AP', '120b', '180b', '30b/35b/40b/45b/50b/55b/60b/65b/70b/75b/80b/90b/100b/120b/150b/180b'],
                 ['E. Kane', 'No AP', '125b', '400b', '25b/30b/35b/40b/45b/50b/55b/60b/65b/70b/75b/80b/90b/100b/125b/150b/200b/250b/300b/400b'],
+                ['E. Kang-Gsod', 'No AP', '10t', '100t', '3t/5t/10t/30t/50t/60/100t'],
                 ['E. Karkata', 'No AP', '125b', '300b', '30b/35b/40b/45b/50b/55b/60b/65b/70b/75b/80b/90b/100b/125b/150b/200b/240b/300b'],
                 ['E. Killers', 'No AP', '60b', '60b', '10b/15b/20b/25b/30b/35b/40b/45b/50b/55b/60b'],
                 ['E. Malleus', 'No AP', '100b', '200b', '20b/25b/30b/35b/40b/45b/50b/55b/60b/65b/70b/75b/80b/90b/100b/150b/200b'],
@@ -400,7 +401,21 @@
             ],
             "OS values below AP and Tiers far below AP are not included. Script by Dusan, Idrinth and Warric"
         ),
-        new NITCImage( "Deadly", "https://image.prntscr.com/image/zvvcKMnRSYqNsWkHpxu76Q.png" ),
+        new NITCTable(
+            "Deadly",
+            ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
+            [
+                ['Deadly BH LT', '1.5t', '5t', '100t', '500b/750b/1t/1.5t/2t/2.5t/3t/4t/5t/7.5t/10t/15t/20t/30t/40t/50t/100t'],
+                ['Deadly Clockwork', '500b', '5t', '50t', '500b/750b/1t/1.5t/2t/2.5t/3t/4t/5t/7.5t/10t/15t/20t/30t/40t/50t'],
+                ['Deadly Bastion', '500b', '5t', '50t', '500b/750b/1t/1.5t/2t/2.5t/3t/4t/5t/7.5t/10t/15t/20t/30t/40t/50t'],
+                ['Deadly Drakontos', '5t', '5t', '600t', '1t/5t/10t/20t/30t/40t/50t/100t/150t/200t/300t/400t/600t'],
+                ['Deadly Horgrak', '4t', '5t', '600t', '1t/5t/10t/20t/30t/40t/50t/100t/150t/200t/300t/400t/600t'],
+                ['Deadly Lady Vas\'ok', '6.25t', '5t', '1q', '1t/5t/15t/20t/30t/40t/50t/100t/200t/300t/400t/500t/600t/1q'],
+                ['Deadly Talon', '37.5t', '40t', '1.5q', '15t/20t/35t/40t/50t/100t/200t/250t/300t/400t/500t/1q/1.5q'],
+                ['Deadly Verkiteia', '75t', '75t', '2q', '75t/100t/200t/300t/400t/800t/1.5q/2q (might be missing tiers)']
+            ],
+            "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
+        ),
         new NITCSplitter(),
         new NITCTable(
             'Old Guild',
