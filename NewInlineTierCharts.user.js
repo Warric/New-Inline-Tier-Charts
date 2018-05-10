@@ -27,20 +27,20 @@
 // ==/UserScript==
 (function() {
     "use strict";
-    class Splitter {
+    class NITCSplitter {
         constructor() {
             this.element = document.createElement('li');
         }
-    }
-    class Button extends Splitter {
+    };
+    class NITCButton extends NITCSplitter {
         constructor(title, func) {
             super();
             this.element.appendChild(document.createElement('button'));
             this.element.firstChild.appendChild(document.createTextNode(title));
             this.element.onclick = func;
         }
-    }
-    class ButtonWithContent extends Button {
+    };
+    class NITCButtonWithContent extends NITCButton {
         constructor(title, background) {
             super(title, function() {
                 let status = this.getAttribute("class") === "active" ? "" : "active";
@@ -55,8 +55,8 @@
                 this.element.lastChild.setAttribute('style', 'background:'+background);
             }
         }
-    }
-    class Table extends ButtonWithContent {
+    };
+    class NITCTable extends NITCButtonWithContent {
         constructor(title, columns, lines, comment, background) {
             super(title, background);
             let table = document.createElement('table');
@@ -76,7 +76,7 @@
                 table.lastChild.appendChild(document.createElement('tr'));
                 for (let column in lines[line]) {
                     table.lastChild.lastChild.appendChild(document.createElement('td'));
-                    table.lastChild.lastChild.lastChild.appendChild(document.createTextNode(lines[line][column].replace(/\//g, ' / ')));
+                    table.lastChild.lastChild.lastChild.appendChild(document.createTextNode((lines[line][column]+'').replace(/\//g, ' / ')));
                 }
             }
             this.element.lastChild.appendChild(table);
@@ -85,16 +85,16 @@
                 this.element.lastChild.lastChild.appendChild(document.createTextNode (comment));
             }
         }
-    }
-    class Image extends ButtonWithContent {
+    };
+    class NITCImage extends NITCButtonWithContent {
         constructor(title, url, background) {
             super(title, background);
             this.element.lastChild.appendChild(document.createElement('img'));
             this.element.lastChild.lastChild.setAttribute('alt', title);
             this.element.lastChild.lastChild.setAttribute('src', url);
         }
-    }
-    class TableAndImage extends Table {
+    };
+    class NITCTableAndImage extends NITCTable {
         constructor(title, url, columns, lines, comment, background) {
             super(title, columns, lines, '', background);
             this.element.lastChild.appendChild(document.createElement('img'));
@@ -105,17 +105,20 @@
                 this.element.lastChild.lastChild.appendChild(document.createTextNode (comment));
             }
         }
-    }
+    };
     (function(list) {
         let element = document.createElement('ul');
-        element.appendChild((new Button("\u21C6", function() {
+        element.appendChild((new NITCButton("\u21C6", function() {
                 this.parentNode.setAttribute("class", (this.parentNode.getAttribute("class") === "right" ? "" : "right"));
             }))
             .element);
-        element.appendChild((new Splitter())
-            .element);
+        element.appendChild((new NITCSplitter()).element);
         element.setAttribute('id', 'NewInlineTierCharts');
         for (let item in list) {
+            if(!list[item] || !list[item].element) {
+                console.log(item+" failed to have an element");
+                continue;
+            }
             element.appendChild(list[item].element);
         }
         document.getElementsByTagName('body')[0].appendChild(element);
@@ -139,7 +142,7 @@
                 "#NewInlineTierCharts .active button{background:#222;color:#fff;}" +
                 "#NewInlineTierCharts table{max-width:100%;text-align:center;border-collapse:collapse;padding:1px;}" +
                 "#NewInlineTierCharts td,#NewInlineTierCharts th{border:1px #ddd solid;}" +
-                "#NewInlineTierCharts thead > tr > th{border-bottom:1px #000 solid;}" +
+                "#NewInlineTierCharts thead > tr > th{border-bottom:1px #000 solid;font-weight:bold;}" +
                 "#NewInlineTierCharts tbody > tr > td{color:#222;border-top:1px #000 solid;border-bottom:1px #000 solid;}" +
                 "#NewInlineTierCharts tbody > tr:nth-of-type(2n-1) > td{background:rgba(0,0,0,0.2);}"
             ));
@@ -157,7 +160,7 @@
         };
         window.onresize();
     }([
-        new Table(
+        new NITCTable(
             'Z1-9',
             ['Name', 'AP', '2/9'],
             [
@@ -180,7 +183,7 @@
                 ['Hydra', '650k', '2.86m'],
                 ['Ironclad', '1m', '2.4m'],
                 ['Kalaxia', '1.6m', '2.08m'],
-                ['Kang-Gsod', '950k', '4.18m']
+                ['Kang-Gsod', '950k', '4.18m'],
                 ['Kerberos', '700k', '2.87m'],
                 ['Lurking Horror', '350k', '1.54m'],
                 ['Maraak', '1.5m', '3.6m'],
@@ -205,7 +208,7 @@
                 ['Zombie', '900k', '3.69m']
             ]
         ),
-        new Table(
+        new NITCTable(
             'Small',
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -227,7 +230,7 @@
             ],
             "OS values below AP and Tiers far below AP are not included. Script by Dusan, Idrinth and Warric"
         ),
-        new Table(
+        new NITCTable(
             "Medium",
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -252,7 +255,7 @@
             ],
             "OS values below AP and Tiers far below AP are not included. Script by Dusan, Idrinth and Warric"
         ),
-        new Table(
+        new NITCTable(
             "Large",
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -276,7 +279,7 @@
             ],
             "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
-        new Table(
+        new NITCTable(
             "Epic",
              ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
              [
@@ -304,7 +307,7 @@
             ],
             "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
-        new Table(
+        new NITCTable(
             "Colossal",
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -334,7 +337,7 @@
             ],
             "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
-        new Table(
+        new NITCTable(
             "Gigantic",
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -358,7 +361,7 @@
             ],
             "* OS values below AP and tiers far below AP is not included. Script by Dusan,  Idrinth and Warric*"
         ),
-        new Table(
+        new NITCTable(
             "Elite",
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -395,9 +398,9 @@
             ],
             "OS values below AP and Tiers far below AP are not included. Script by Dusan, Idrinth and Warric"
         ),
-        new Image( "Deadly", "https://image.prntscr.com/image/zvvcKMnRSYqNsWkHpxu76Q.png" ),
-        new Splitter(),
-        new Table(
+        new NITCImage( "Deadly", "https://image.prntscr.com/image/zvvcKMnRSYqNsWkHpxu76Q.png" ),
+        new NITCSplitter(),
+        new NITCTable(
             'Old Guild',
             ['Name', 'AP', '2/9', 'MS'],
             [
@@ -424,7 +427,7 @@
                 ['Varlachlech', '3.3m', '14.5m', '59.4m']
             ]
         ),
-        new Table(
+        new NITCTable(
             'Guild 1',
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -433,7 +436,7 @@
                 ['Bog Bodies', '75m', '78m', '1b', '16.5m/25.5m/35m/45m/55.5m/66.5m/78m/90m/103m/116m/129m/143m/158m/173m/188m/204m/221m/238m/255m/273m/292m/311m/330m/350m/1b'],
                 ['Clockwork Giant', '100m', '150m', '5b', '100m/150m/200m/375m/500m/750m/1b/1.25b/1.5b/2b/2.5b/3.75b/5b'],
                 ['Dar\'Hed\'Nal', '20m', '25.5m', '1b', '16.5m/25.5m/35m/45m/55.5m/66.5m/78m/90m/103m/116m/129m/143m/158m/173m/188m/204m/221m/238m/255m/273m/292m/311m/330m/350m/1b'],
-                ['Doomglare', '15m', '16.5m', '1b', '16.5m/25.5m/35m/45m/55.5m/66.5m/78m/90m/103m/116m/129m/143m/158m/173m/188m/204m/221m/238m/255m/273m/292m/311m/330m/350m/1b']
+                ['Doomglare', '15m', '16.5m', '1b', '16.5m/25.5m/35m/45m/55.5m/66.5m/78m/90m/103m/116m/129m/143m/158m/173m/188m/204m/221m/238m/255m/273m/292m/311m/330m/350m/1b'],
                 ['Elite Gladiators', '7.5m', '39m', '39m', '15m/18m/21m/24m/27m/30m/33m/36m/39m'],
                 ['Grundus', '60m', '1', '1', 'Any damage to this guild raid gets you loot'],
                 ['Keron', '150m', '158m', '1b', '16.5m/25.5m/35m/45m/55.5m/66.5m/78m/90m/103m/116m/129m/143m/158m/173m/188m/204m/221m/238m/255m/273m/292m/311m/330m/350m/1b'],
@@ -448,7 +451,7 @@
                 ['Xessus', '5m', '20m', '90m', '10m/14m/18m/20m/30m/40m/50m/60m/70m/80m/90m']
             ]
         ),
-        new Table(
+        new NITCTable(
             "Guild 2",
             ['Name', 'AP', 'OS', 'Max Tier', 'All Tiers'],
             [
@@ -469,16 +472,16 @@
                 ['Xax\'zisz', '26b', '100b', '500b', '15b/30b/50b/80b/100b/200b/500b']
             ]
         ),
-        new Splitter(),
-        new Image('BoB Map', 'http://image.prntscr.com/image/5600754e9a294daeb006c210134a9889.png'),
-        new Image('MaM Map', 'http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png'),
-        new Image('GD Map', 'http://image.prntscr.com/image/aeaada2593784f29ab056098bae4e18b.png'),
-        new Image('GoC Map', 'http://image.prntscr.com/image/333019c25a0e435593a15ef78986539b.png'),
-        new Image('FW Map', 'http://image.prntscr.com/image/4d0e0f3a7d30407887e3e323ee5350c4.png'),
-        new Image('NQ Map', 'https://image.prntscr.com/image/993789c610e6447d9d178360b1b52ef7.png'),
-        new Image('RT Map', 'http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png'),
-        new Image('BHH Map', 'https://image.prntscr.com/image/06592f09a3d94f5c9b99add335e6ec46.png'),
-        new TableAndImage(
+        new NITCSplitter(),
+        new NITCImage('BoB Map', 'http://image.prntscr.com/image/5600754e9a294daeb006c210134a9889.png'),
+        new NITCImage('MaM Map', 'http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png'),
+        new NITCImage('GD Map', 'http://image.prntscr.com/image/aeaada2593784f29ab056098bae4e18b.png'),
+        new NITCImage('GoC Map', 'http://image.prntscr.com/image/333019c25a0e435593a15ef78986539b.png'),
+        new NITCImage('FW Map', 'http://image.prntscr.com/image/4d0e0f3a7d30407887e3e323ee5350c4.png'),
+        new NITCImage('NQ Map', 'https://image.prntscr.com/image/993789c610e6447d9d178360b1b52ef7.png'),
+        new NITCImage('RT Map', 'http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png'),
+        new NITCImage('BHH Map', 'https://image.prntscr.com/image/06592f09a3d94f5c9b99add335e6ec46.png'),
+        new NITCTableAndImage(
             'CC Map',
             'https://nitc.idrinth.de/cc_map.jpg',
             ['Tier', 'Young Drake', 'Scarred Drake', 'Thorned Wyrm', 'Gilded Dragon(Gold)', 'Yathestraz'],
@@ -504,6 +507,6 @@
             '',
             'gold'
         ),
-        new Image('IH Map', 'https://image.prntscr.com/image/QXwcaZ1rSX2IxUzZyginHw.png')
+        new NITCImage('IH Map', 'https://image.prntscr.com/image/QXwcaZ1rSX2IxUzZyginHw.png')
     ]));
 })();
