@@ -43,8 +43,8 @@
     class ButtonWithContent extends Button {
         constructor(title, background) {
             super(title, function() {
-                var status = this.getAttribute("class") === "active" ? "" : "active";
-                for (var counter = 0; counter < this.parentNode.childNodes.length; counter++) {
+                let status = this.getAttribute("class") === "active" ? "" : "active";
+                for (let counter = 0; counter < this.parentNode.childNodes.length; counter++) {
                     this.parentNode.childNodes[counter].setAttribute("class", "");
                 }
                 this.setAttribute("class", status);
@@ -59,11 +59,11 @@
     class Table extends ButtonWithContent {
         constructor(title, columns, lines, comment, background) {
             super(title, background);
-            var table = document.createElement('table');
-            var width = Math.floor(100 / (columns.length > 4 ? columns.length + 2 : columns.length));
+            let table = document.createElement('table');
+            let width = Math.floor(100 / (columns.length > 4 ? columns.length + 2 : columns.length));
             table.appendChild(document.createElement('thead'));
             table.lastChild.appendChild(document.createElement('tr'));
-            for (var column in columns) {
+            for (let column in columns) {
                 table.lastChild.lastChild.appendChild(document.createElement('th'));
                 table.lastChild.lastChild.lastChild.setAttribute('style', 'width:' + width + '%');
                 table.lastChild.lastChild.lastChild.appendChild(document.createTextNode(columns[column]));
@@ -72,9 +72,9 @@
                 table.lastChild.lastChild.lastChild.setAttribute('style', 'width:' + (3 * width) + '%');
             }
             table.appendChild(document.createElement('tbody'));
-            for (var line in lines) {
+            for (let line in lines) {
                 table.lastChild.appendChild(document.createElement('tr'));
-                for (var column in lines[line]) {
+                for (let column in lines[line]) {
                     table.lastChild.lastChild.appendChild(document.createElement('td'));
                     table.lastChild.lastChild.lastChild.appendChild(document.createTextNode(lines[line][column].replace(/\//g, ' / ')));
                 }
@@ -107,7 +107,7 @@
         }
     }
     (function(list) {
-        var element = document.createElement('ul');
+        let element = document.createElement('ul');
         element.appendChild((new Button("\u21C6", function() {
                 this.parentNode.setAttribute("class", (this.parentNode.getAttribute("class") === "right" ? "" : "right"));
             }))
@@ -115,12 +115,12 @@
         element.appendChild((new Splitter())
             .element);
         element.setAttribute('id', 'NewInlineTierCharts');
-        for (var item in list) {
+        for (let item in list) {
             element.appendChild(list[item].element);
         }
         document.getElementsByTagName('body')[0].appendChild(element);
         document.getElementsByTagName('head')[0].appendChild((function() {
-            var styles = document.createElement("style");
+            let styles = document.createElement("style");
             styles.setAttribute("type", "text/css");
             styles.setAttribute("id", "NewInlineTierChartsStyles");
             styles.appendChild(document.createTextNode(
@@ -146,7 +146,7 @@
             return styles;
         })());
         document.getElementsByTagName('head')[0].appendChild((function() {
-            var styles = document.createElement("style");
+            let styles = document.createElement("style");
             styles.setAttribute("type", "text/css");
             styles.setAttribute("id", "NewInlineTierChartsStylesResize");
             return styles;
