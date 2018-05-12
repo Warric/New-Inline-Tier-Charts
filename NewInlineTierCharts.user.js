@@ -508,15 +508,44 @@
                 ['2.75b', '168', '55/29', ''],
                 ['5b', '200', '62/38', ''],
                 ['7b', '212', '64/42', 'MS for 25,50,75 man'],
-                ['10b', '232', '69/47', ''],
-                ['15b', '252', '74/52', '']
+                ['10b', '232', '69/47', '100-man/boss'],
+                ['15b', '252', '74/52', '100-man/boss']
             ],
             '',
             'https://nitc.idrinth.de/bob_map.jpg',
-            'purple',
+            'indigo',
             true
         ),
-        new NITCImage('MaM Map', 'http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png'),
+       new NITCTable(
+            "MaM Map",
+            ['Tier', 'Total', 'CU/RE', 'Com'],
+            [
+                ['5m', '62', '31/0', ''],
+                ['25m', '64', '32/0', ''],
+                ['75m', '66', '33/0', ''],
+                ['100m', '68', '34/0', ''],
+                ['200m', '84', '35/7', ''],
+                ['250m', '88', '36/8', ''],
+                ['320m', '92', '37/9', ''],
+                ['375m', '96', '38/10', ''],
+                ['480m', '100', '39/11', ''],
+                ['550m', '114', '43/14 ', ''],
+                ['640m', '126', '46/17', ''],
+                ['960m', '140', '48/22', ''],
+                ['1.5b', '148', '50/24', ''],
+                ['2.4b', '158', '53/26', ''],
+                ['2.75b', '168', '55/29', ''],
+                ['5b', '200', '62/38', ''],
+                ['7b', '212', '64/42', 'MS for 25, 50, 75-man'],
+                ['10b', '232', '69/47', '100-man only'],
+                ['15b', '252', '74/52', '100-man only']
+            ],
+            'Boss Tiers after 2.75b:  4.5b / 5.5b / 7.5b(MS)',
+            'https://nitc.idrinth.de/mam_map.png',
+            'red',
+            true
+        ),
+
         new NITCImage('GD Map', 'http://image.prntscr.com/image/aeaada2593784f29ab056098bae4e18b.png'),
         new NITCImage('GoC Map', 'http://image.prntscr.com/image/333019c25a0e435593a15ef78986539b.png'),
         new NITCImage('FW Map', 'http://image.prntscr.com/image/4d0e0f3a7d30407887e3e323ee5350c4.png'),
@@ -547,8 +576,29 @@
             ],
             '',
             'https://nitc.idrinth.de/cc_map.jpg',
-            'gold'
+            'goldenrod',
+            true
         ),
-        new NITCImage('IH Map', 'https://image.prntscr.com/image/QXwcaZ1rSX2IxUzZyginHw.png')
+        new NITCTable(
+            "IH Map",
+            ['Tiers', 'Pillager', 'Warrior', 'Minotaur', 'Kobold', 'Frog-Man (Gold)', 'Arisses'],
+            [
+                ['1b', 'Total = 38', 'Total = 38', 'Total = 38', 'Total = 38', '13 SP + 3 Crafts', 'Total = 38'],
+                ['5b', 'Total = 181', 'Total = 181', 'Total = 181', 'Total = 181', '48 SP + 23 Crafts', 'Total = 181'],
+                ['15b', 'Total = 540', 'Total = 540', 'Total = 540', 'Total = 540', '241 SP + 77 Crafts', 'Total = 540'],
+                ['30b', 'Total = 1081', 'Total = 1081', 'Total = 1081', 'Total = 1081', '651 SP + 141 Crafts', 'Total = 1081'],
+                ['50b', 'Total = 1999', 'Total = 1999', 'Total = 1999', 'Total = 1999', '1364 SP + 262 Crafts', 'Total = 1999'],
+                ['80b', 'Total = 3203', 'Total = 3203', 'Total = 3203', 'Total = 3203', '2439 SP + 418 Crafts', 'Total = 3203'],
+                ['100b', 'Total = 5047', 'Total = 5047', 'Total = 5047', 'Total = 5047', '3828 SP + 658 Crafts', 'Total = 5047'],
+                ['200b', 'Total = 6405', 'Total = 6405', 'Total = 6405', 'Total = 6405', '4749 SP + 835 Crafts', 'Total = 6405'],
+                ['400b', '-', 'Total = 12814', 'Total = 12814', 'Total = 12814', '9241 SP + 1670 Crafts', 'Total = 12814'],
+                ['600b', '-', '-', 'Total = 19219', 'Total = 19219', '16567 SP + 2506 Crafts', 'Total = 19219'],
+                ['800b', '-', '-', '-', 'Total = 25622', '21647 SP + 3341 Crafts', 'Total = 25622'],
+                ['1t', '-', '-', '-', '-', '-', 'Total = 28846'],
+                ['2t', '-', '-', '-', '-', '-', 'Total = 38533']
+            ],
+            '',
+            'https://nitc.idrinth.de/ih_map.png'
+        )
     ]));
 })();
