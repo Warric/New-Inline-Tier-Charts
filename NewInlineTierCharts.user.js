@@ -2,26 +2,16 @@
 // @name           New Inline Tier Charts
 // @namespace      DusanAndWarric
 // @description    This will provide an inline tier chart for Dawn of the Dragons.Maps created by Brayden.Tiers collected by Warric.
-// @include        http://www.27thdimension.com/dotd/tierChartsStandalone.html
-// @include        http://www.kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
-// @include        https://www.kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
-// @include        http://www.kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
-// @include        https://www.kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
-// @include        http://kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
-// @include        https://kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
-// @include        http://kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
-// @include        https://kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
-// @include        http://www.dawnofthedragons.com/game*
-// @include        http://www.dawnofthedragons.com/
-// @include        http://www.dawnofthedragons.com
-// @include        http://dawnofthedragons.com/game*
-// @include        https://apps.facebook.com/dawnofthedragons*
-// @include        http://web1.dawnofthedragons.com/live_standalone*
+// @include        *www.27thdimension.com/dotd/tierChartsStandalone.html
+// @include        *kongregate.com/games/5thplanetgames/dawn-of-the-dragons*
+// @include        *kongregate.com/games/5thPlanetGames/dawn-of-the-dragons*
+// @include        *50.18.191.15/kong/?DO_NOT_SHARE_THIS_LINK*
+// @include        *dawnofthedragons.com*
+// @include        *apps.facebook.com/dawnofthedragons*
+// @include        *web1.dawnofthedragons.com/live_standalone*
 // @include        *newgrounds.com/portal/view/609826*
-// @include        http://dawnofthedragons.com/
-// @include        https://armorgames.com/dawn-of-the-dragons-game/13509*
-// @include        https://www.armorgames.com/dawn-of-the-dragons-game/13509*
-// @include        https://armorgames.com/play/13509/dawn-of-the-dragons*
+// @include        *armorgames.com/dawn-of-the-dragons-game/13509*
+// @include        *armorgames.com/*/13509*
 // @version        3.6.19
 // @grant          none
 // ==/UserScript==
