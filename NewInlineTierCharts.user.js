@@ -12,7 +12,7 @@
 // @include        *newgrounds.com/portal/view/609826*
 // @include        *armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        *armorgames.com/*/13509*
-// @version        3.6.19
+// @version        3.6.20
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -92,7 +92,7 @@
             [ "Colossal", "https://vignette.wikia.nocookie.net/godra/images/2/24/Collossal.png/revision/latest/scale-to-width-down/786" ],
             [ "Gigantic", "https://vignette.wikia.nocookie.net/godra/images/3/37/Gigantic.png/revision/latest/scale-to-width-down/786" ],
             [ "Elite", "https://vignette.wikia.nocookie.net/godra/images/7/7b/Elites.png/revision/latest/scale-to-width-down/786" ],
-            [ "Deadly", "https://vignette.wikia.nocookie.net/godra/images/8/88/Deadlies.png/revision/latest/scale-to-width-down/800" ],
+            [ "Deadly", "https://vignette.wikia.nocookie.net/godra/images/8/88/Deadlies.png/revision/latest/scale-to-width-down/786" ],
             [ "", "" ],
             [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
             [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
@@ -108,6 +108,7 @@
             [ "BHH Map", "https://vignette.wikia.nocookie.net/godra/images/4/49/BHH.png/revision/latest/scale-to-width-down/665" ],
             [ "CC Map", "https://vignette.wikia.nocookie.net/godra/images/9/9f/CC.png/revision/latest/scale-to-width-down/664" ],
             [ "IH Map", "https://image.prntscr.com/image/QXwcaZ1rSX2IxUzZyginHw.png" ],
-            [ "SoB Map", "https://vignette.wikia.nocookie.net/godra/images/2/29/SoB.png/revision/latest/scale-to-width-down/608" ]  
+            [ "SoB Map", "https://vignette.wikia.nocookie.net/godra/images/2/29/SoB.png/revision/latest/scale-to-width-down/608" ],
+            [ "DC Map", "https://vignette.wikia.nocookie.net/imw/images/f/f5/DC.png/revision/latest/scale-to-width-down/608" ]  
         ]
 );
