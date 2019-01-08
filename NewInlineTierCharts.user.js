@@ -12,7 +12,7 @@
 // @include        *newgrounds.com/portal/view/609826*
 // @include        *armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        *armorgames.com/*/13509*
-// @version        3.6.20
+// @version        3.6.21
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -84,7 +84,7 @@
 } ) (
         [
             [ "", "" ],
-            [ "Z1-9", "http://image.prntscr.com/image/4f72335bf6a44a699472fb174e487a28.png" ],
+            [ "Z1-9", "https://vignette.wikia.nocookie.net/imw/images/d/d0/Z1-9.png/revision/latest/scale-to-width-down/618" ],
             [ "Small", "https://vignette.wikia.nocookie.net/godra/images/b/b6/Small.png/revision/latest/scale-to-width-down/786" ],
             [ "Medium", "https://vignette.wikia.nocookie.net/godra/images/9/96/Medium.png/revision/latest/scale-to-width-down/786" ],
             [ "Large", "https://vignette.wikia.nocookie.net/godra/images/7/71/Large.png/revision/latest/scale-to-width-down/786" ],
@@ -94,20 +94,20 @@
             [ "Elite", "https://vignette.wikia.nocookie.net/godra/images/7/7b/Elites.png/revision/latest/scale-to-width-down/786" ],
             [ "Deadly", "https://vignette.wikia.nocookie.net/godra/images/8/88/Deadlies.png/revision/latest/scale-to-width-down/786" ],
             [ "", "" ],
-            [ "Old Guild", "http://image.prntscr.com/image/6afdca29e2f14617ad6ee220615ebc54.png" ],
-            [ "Guild 1/2", "http://image.prntscr.com/image/ecb8c73134954e61ad5990a476cd78d4.png" ],
-            [ "Guild 2/2", "https://vignette.wikia.nocookie.net/godra/images/9/9d/Guild_II.png/revision/latest/scale-to-width-down/800" ],
+            [ "Old Guild", "https://vignette.wikia.nocookie.net/imw/images/2/2a/Guild_old.png/revision/latest/scale-to-width-down/426"" ],
+            [ "Guild 1/2", "https://vignette.wikia.nocookie.net/imw/images/5/5c/Guild1.png/revision/latest/scale-to-width-down/786"" ],
+            [ "Guild 2/2", "https://vignette.wikia.nocookie.net/godra/images/9/9d/Guild_II.png/revision/latest/scale-to-width-down/786" ],
             [ "", "" ],
-            [ "BoB Map", "http://image.prntscr.com/image/5600754e9a294daeb006c210134a9889.png" ],
-            [ "MaM Map", "http://image.prntscr.com/image/832f8eb0bd4a433cbf5b366fcbf66f3a.png" ],
-            [ "GD Map", "http://image.prntscr.com/image/aeaada2593784f29ab056098bae4e18b.png" ],
-            [ "GoC Map", "http://image.prntscr.com/image/333019c25a0e435593a15ef78986539b.png" ],
-            [ "FW Map", "http://image.prntscr.com/image/4d0e0f3a7d30407887e3e323ee5350c4.png" ],
-            [ "NQ Map", "https://image.prntscr.com/image/993789c610e6447d9d178360b1b52ef7.png" ],
-            [ "RT Map", "http://image.prntscr.com/image/dac78691e48440de83a7366540de3da1.png" ],
+            [ "BoB Map", "https://vignette.wikia.nocookie.net/imw/images/f/f0/BoB.png/revision/latest/scale-to-width-down/666" ],
+            [ "MaM Map", "https://vignette.wikia.nocookie.net/imw/images/2/22/MaM.png/revision/latest/scale-to-width-down/666" ],
+            [ "GD Map", "https://vignette.wikia.nocookie.net/imw/images/5/55/GD.png/revision/latest/scale-to-width-down/666" ],
+            [ "GoC Map", "https://vignette.wikia.nocookie.net/imw/images/3/30/GoC.png/revision/latest/scale-to-width-down/666" ],
+            [ "FW Map", "https://vignette.wikia.nocookie.net/imw/images/3/38/FW.png/revision/latest/scale-to-width-down/666" ],
+            [ "NQ Map", "https://vignette.wikia.nocookie.net/imw/images/0/01/NMQ.png/revision/latest/scale-to-width-down/666" ],
+            [ "RT Map", "https://vignette.wikia.nocookie.net/imw/images/2/24/RT.png/revision/latest/scale-to-width-down/688" ],
             [ "BHH Map", "https://vignette.wikia.nocookie.net/godra/images/4/49/BHH.png/revision/latest/scale-to-width-down/665" ],
             [ "CC Map", "https://vignette.wikia.nocookie.net/godra/images/9/9f/CC.png/revision/latest/scale-to-width-down/664" ],
-            [ "IH Map", "https://image.prntscr.com/image/QXwcaZ1rSX2IxUzZyginHw.png" ],
+            [ "IH Map", "https://vignette.wikia.nocookie.net/imw/images/c/ce/IH.png/revision/latest/scale-to-width-down/608" ],
             [ "SoB Map", "https://vignette.wikia.nocookie.net/godra/images/2/29/SoB.png/revision/latest/scale-to-width-down/608" ],
             [ "DC Map", "https://vignette.wikia.nocookie.net/imw/images/f/f5/DC.png/revision/latest/scale-to-width-down/608" ]  
         ]
