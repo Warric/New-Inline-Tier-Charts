@@ -12,7 +12,7 @@
 // @include        *newgrounds.com/portal/view/609826*
 // @include        *armorgames.com/dawn-of-the-dragons-game/13509*
 // @include        *armorgames.com/*/13509*
-// @version        3.6.21
+// @version        3.6.22
 // @grant          none
 // ==/UserScript==
 ( function ( data ) {
@@ -94,8 +94,8 @@
             [ "Elite", "https://vignette.wikia.nocookie.net/godra/images/7/7b/Elites.png/revision/latest/scale-to-width-down/786" ],
             [ "Deadly", "https://vignette.wikia.nocookie.net/godra/images/8/88/Deadlies.png/revision/latest/scale-to-width-down/786" ],
             [ "", "" ],
-            [ "Old Guild", "https://vignette.wikia.nocookie.net/imw/images/2/2a/Guild_old.png/revision/latest/scale-to-width-down/426"" ],
-            [ "Guild 1/2", "https://vignette.wikia.nocookie.net/imw/images/5/5c/Guild1.png/revision/latest/scale-to-width-down/786"" ],
+            [ "Old Guild", "https://vignette.wikia.nocookie.net/imw/images/2/2a/Guild_old.png/revision/latest/scale-to-width-down/426" ],
+            [ "Guild 1/2", "https://vignette.wikia.nocookie.net/imw/images/5/5c/Guild1.png/revision/latest/scale-to-width-down/786" ],
             [ "Guild 2/2", "https://vignette.wikia.nocookie.net/godra/images/9/9d/Guild_II.png/revision/latest/scale-to-width-down/786" ],
             [ "", "" ],
             [ "BoB Map", "https://vignette.wikia.nocookie.net/imw/images/f/f0/BoB.png/revision/latest/scale-to-width-down/666" ],
